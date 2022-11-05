@@ -1,0 +1,10 @@
+{
+    "id": 33,
+    "description": "Dati in input due path a file di testo, prende il testo nel primo file, costruisce un istogramma con la frequenza dei caratteri nel testo e salva l'istogramma nel scondo file, ritorna il numero di linee dell'istogramma",
+    "text": "\n    Implementate la funzione es33(fname1,fname2) prende in input l'indirizzo di un  file di testo fname e\n    costruisce un istogramma con le frequenze di alcuni dei caratteri presenti nel  file di testo. \n    Salva l'istogramma creato nel file di testo fname2 e restituisce il numero di linee di cui e' composto.\n    L'istogramma contiene tante linee quanti sono i caratteri tra 'a' e 'z' presenti nel testo.\n    Se un certo carattere x compare nel testo  y volte allora nell'istogramma ci sara' \n    una riga con una stringa composta dal carattere x ripetuto y volte. Le righe dell'istogramma \n    vanno ordinate per lunghezza decrescente dei caratteri che vi compaiono e \n    lessicograficamente a parita' di lunghezza.\n    Ad esempio se il file fname1 contiene il testo 'Monti, Sterbini e Spognardi' allora\n    il valore restituito dalla funzione sara' 11 e  l'istogramma sara'\n    iiii\n\tnnn\n\tee\n\too\n\trr\n\ttt\n\ta\n\tb\n\td\n\tg\n\tp\n    ",
+    "algorithm": "Leggi il testo dal primo file\ninizializza una lista vuota\nper ogni carattere da 'a' a 'z':\n\tconto le volte che il carattere compare nel testo\n\tse il numero è > di 0:\n\t\taggiungo la stringa del carattere ripetuto il numero di volte\nordino la lista\nscrivo l'istogramma nel file 2\nritorno la lunghezza della lista",
+    "tags": ["File", "Stringhe", "Ordinamento"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-15-2-18"
+}

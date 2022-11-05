@@ -1,0 +1,10 @@
+{
+    "id": 2, 
+    "description": "Prende in input una lista di stringhe e un file di testo, cancella dalla lista le stringhe ottenibili concatenando due stringhe lette dal file, ritorna il numero di stringhe cancellate dalla lista", 
+    "text": "\n    Si definisca la  funzione es4(ls,ftesto) che,\n    - riceve una lista ls contenente stringhe di caratteri  e l'indirizzo di  un file di \n      testo 'ftesto' contenente almeno due stringhe di caratteri separate da spazi e/o  virgole e/o\n      andate a capo.\n    -  cancella in modo distruttivo da ls le stringhe che e' possibile ottenere concatenando due\n       stringhe consecutive lette dal file\n    - restituisce il numero di stringhe cancellate da ls.\n    ESEMPIO: \n    se  ls=['b', 'abba', 'babc','ccc', 'bba', 'bb' ] e il  file di testo e' \n    \"b, \\n\\n\\n ab  ba, b \\nc c cc\" \n    la funzione restituisce il numero 2\n    e la lista ls risultera' modificata come ['b',  'babc', 'bba', 'bb' ]\n    Infatti il file contiene in sequenza le parole \n     'b', 'ab', 'ba', 'b', 'c' 'c' 'cc'\n     e le parole di ls che possono ottenersi come concatenazione di due  parole che compaiono \n     una di seguito all'altra  nel file di testo \n     sono:\n     'abba' = 'ab' +'ba'\n     'ccc'= 'c' + 'cc'\n    ", 
+    "algorithm": "es2(ls, ftest)\n\tapri il file di testo e salva il contenuto in una stringa\n\trimpiazza tutte le virgole con spazi bianchi\n\tdividi le parole nella stringa in una lista lista_parole\n\tinizializza la variabile count a 0\n\tper i che va da 0 alla lunghezza di lista_parole -1:\n\t\tse la stringa in posizione i, concatenata alla stringa in posizione i+1 in lista_parole è in ls:\n\t\t\trimuovi la stringa ottenuta da ls\n\t\t\tincrementa count\n\tritorna count", 
+    "tags": ["Stringhe", "File"], 
+    "effort": 4,
+    "clues": [],
+    "from":"esame-7-11-18"
+}

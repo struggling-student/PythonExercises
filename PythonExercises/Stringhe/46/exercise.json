@@ -1,0 +1,10 @@
+{
+    "id": 46,
+    "description": "Data in input una stringa, restituisce la sottostringa si lunghezza massima palindroma",
+    "text": "\n    progettare la funzione es13(parola) che usa almeno una funzione ricorsiva e:\n    - prende in input una stringa di caratteri parola e, tra tutte le sottostringhe di parola restituisce\n    quella di lunghezza massima che risulti anche palindroma.\n    In caso ci siano piu' palindromi a lunghezza massima viene restituita quella che precede lessicograficamente.\n    Si ricorda che una sottostringa e' quello che si ottiene da una stringa\n    eliminando 0 o piu' caratteri all'inizio e 0 o piu' caratteri alla fine mentre\n    una stringa e' palindroma se puo' leggersi indifferentemente da sinistra a destra o viceversa.\n\n    Ad esempio:\n    con parola='zzzcdcaaabvv'  la funzione restituira' la stringa palindroma 'aaa'\n    con parola='adbbabbcbbaad' la funzione restituira' la stringa palindroma 'abbcbba'\n    ",
+    "algorithm": "inizializza l'insieme delle sottostringhe\nper i che va da 0 alla lunghezza della parola:\n\tper j che va da i alla lunghezza della parola:\n\t\taggiungi all'insime la sottostringa che va da i a j+1\nordina le sottostringhe dell'insieme in ordine decrescente di lunghezza\nper ogni sottostringa dell'insieme:\n\tse è palindroma:\n\t\tritorna la sottostringa\n\n\nper controllare se una stringa è palindroma definiamo una funzione palindroma(stringa), ricorsiva:\n\tse la lunghezza della stringa è < 2:\n\t\tritorna true\n\taltrimenti:\n\t\tritorna (il primo carattere è uguale al secondo) AND palindroma(la sottostringa composta dai caratteri della stringa tranne il primo e l'ultimo)",
+    "tags": ["Stringhe", "Ricorsione"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-19-6-18"
+}

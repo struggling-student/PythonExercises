@@ -1,0 +1,10 @@
+{
+    "id": 31,
+    "description": "Dati due path a file di testo, si trasformano le stringhe contenute nel primo file e si salva il risultato nel secondo file, ritorna il numero di caratteri modificati.",
+    "text": "\n    Implementate la funzione es31(fname1,fname2) che prende in input l'indirizzo di due  file di testo.\n    Il testo del primo file va modificato come segue:\n    - ciascun carattere tra 'a' e 'z' (minuscoli) che compare nel file in un numero dispari di parole\n    (una parola e' una sequenza massimale di caratteri diversi dallo spazio, tab o a capo)\n    va sostituito dal corrispondente carattere maiuscolo.\n    Il file cosi' ottenuto va poi registrato all'indirizzo fname2.\n    La funzione deve restituire quanti dei 26 caratteri tra 'a' e 'z' \n    da minuscoli son diventati maiuscoli nella trasformazione del file di testo. \n    Ad esempio se \n    - il file fname1 contiene  il testo 'Monti, Sterbini e Spognardi'\n    - il file fname2 conterra' il testo 'MoNtI, SterBINI e SPoGNArDI'\n    il valore restituito dalla funzione sara' 7 (le lettere cambiate sono NIBPGAD)\n    ",
+    "algorithm": "Apri il primo file e salva il testo in una stringa\ncrea unalista delle parole del testo\ninizializza un dizionario per tenere il conto del numero di volte che un carattere conpare nel testo\nper ogni parola:\n\tcrea un insieme dei caratteri della parola\n\tper ogni carattere dell'insieme:\n\t\tse è un carattere alfabetico:\n\t\t\tincrementa il conteggio per quel carattere\ninizializza una variabile a 0\nper ogni carattere nel dizionario:\n\tse il carattare compare un numero dispari di volte:\n\t\taumenta il conteggio\n\t\trimpiazza nel testo il carattere con il suo corrispettivo maiuscolo\nscrivi il nuovo testo nel secondo file\nritorna il conteggio dei caratteri",
+    "tags": ["File", "Stringhe"],
+    "effort": 4,
+    "clues": [],
+    "from": "recupero-15-2-18"
+}

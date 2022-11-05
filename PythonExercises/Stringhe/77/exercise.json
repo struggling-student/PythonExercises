@@ -1,0 +1,10 @@
+{
+    "id": 77,
+    "description": "Data una stringa di caratteri, senza fare uso della ricorsione, la funzione ritorna la lista dei suffissi della stringa.",
+    "text": "\n    \n    Si definisca la funzione NON ricorsiva e che NON faccia uso di funzioni ricorsive\n    es77(par(parola), che presa in input una stringa di caratteri  parola restituisce la lista dei \n    suffissi di parola. Gli elementi della lista devono risultare ordinati per lunghezza crescente.\n    Si ricorda che un suffisso di una parola e' quello che si ottiene concellando 0 o piu' \n    caratteri iniziali della parola.\n    Ad esempio per es77(\"fondamenti\") la lista restituita sara'\n    ['i', 'ti', 'nti', 'enti', 'menti', 'amenti', 'damenti', 'ndamenti', 'ondamenti', 'fondamenti']\n    ",
+    "algorithm": "es77(parola):\n\tinizializza una lista vuota\n\tper i che va dalla fine della parola a 0:\n\t\taggiungi alla lista i caratteri di parola da i fino alla fine della parola\n\tritorna la lista",
+    "tags": ["Stringhe"],
+    "effort": 3,
+    "clues": [],
+    "from": "esame-18-4-18"
+}

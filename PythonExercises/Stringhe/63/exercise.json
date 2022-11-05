@@ -1,0 +1,10 @@
+{
+    "id": 63,
+    "description": "Dati in input due nomi di file, uno che contiene parole e l'altro da creare, la funzione per ogni parola del primo file, crea una terna (a, b, c) e la scrive nel secondo file, ritorna il numero totale di caratteri nel file 1 ,tranne spazi e a capo.",
+    "text": "\n    Definite la funzione es5(fileParole,fileTerne) che prende in input:\n    - il path FileParole ad un file di testo contenente parole, una parola per ogni riga,\n    - il path fileTerne di un file di testo da creare.\n    La funzione legge le parole presenti nel file di FileParole e crea\n    un nuovo file di testo che salva all'indirizzo fileTerne e restituisce infine il\n    numero totale di caratteri presenti nelle parole del file FileParole (ignorando spazi e accapi).\n    Il file creato ha lo stesso numero di righe del file letto (una per ogni parola)\n    ma le parole in ciascuna riga sono sostituite da terne di interi. Piu' precisamente in\n    corrispondenza della generica parola s viene prodotta la stringa con la tupla\n    (a,b,c) seguita da accapo,\n    dove a e' la lunghezza della parola s, b e' il numero di vocali presenti nella\n    parola s e c e' il numero di lettere maiuscole presenti nella parola s.\n\n    Ad esempio se il file delle parole contiene le due parole 'PytHon' e 'fonDAMenti'\n    la funzione deve creare e salvare in fileTerne un  file di due righe con le due\n    terne (6,1,2) e (10,4,3) e restituire poi l'intero 16.\n    ",
+    "algorithm": "inzializza un counter a 0\napri il primo file come f1\n\tapri il secondo file(in scrittura) come f2:\n\t\tper ogni riga in f1:\n\t\t\tpulisci la parola da spazi e a capo\n\t\t\tincrementa il counter della lunghezza della parola\n\t\t\tinizializza due variabili v e m a 0\n\t\t\tper ogni carattere della parola:\n\t\t\t\tse il carattere è una vocale:\n\t\t\t\t\tincrementa v\n\t\t\t\tse il carattere è maiuscolo:\n\t\t\t\t\tincrementa m\n\t\t\tscrivi la terza (len, v, m) + 'a capo' in f2\nritorna il counter",
+    "tags": ["File", "Stringhe"],
+    "effort": 3,
+    "clues": [],
+    "from": "esame-12-7-18"
+}

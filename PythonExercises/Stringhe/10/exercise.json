@@ -1,0 +1,10 @@
+{
+    "id": 10, 
+    "description": "Dato un file con una parola per riga e un numero k, ritorna la parola composta dalle lettere delle parole lunghe k, prendendo per ogni posizione la lettera che compare più spesso nelle parole", 
+    "text": "\n    Es 10: 3 punti\nprogettare la funzione es10(ftesto,k) che, presi in input \nl'indirizzo di un file di testo ed un intero k, restituisce una stringa di caratteri lunga k.\nIl file di testo contiene stringhe di diversa lunghezza \n(una per riga ed ogni riga termina con '\\n'), si guardi \nad esempio il file f9.txt. \nI k caratteri della stringa restituita  dalla funzione si ottiengono\nconsiderando le stringhe lunghe k presenti nel file di testo. \nL'i-mo carattere della stringa sara' il carattere che compare con maggior \nfrequenza come i-mo carattere delle stringhe lunghe k nel file di testo (in caso \ndi parita' di occorrenze viene scelto il carattere che precede \ngli altri lessicograficamente). \nNel caso il file di testo non contenga parole lunghe k allora viene restituita \nla stringa vuota.  \nAd Esempio, per il file di testo f9.txt e k=3 la funzione restituisce  la stringa 'are' a \nseguito della presenza in f9.txt delle seguenti 4 stringhe lunghe 3:\ntre\ndue\namo\nora \n", 
+    "algorithm": "Leggi il file e salva le parole in una lista\nelimina le parole con lunghezza diversa diversa da k\ninizialiazza una stringa vuota s\n\tse la lista delle parole è vuota ritorna s, altrimenti:\n\tcrea un dizionario con chiave lettera e valore numero volte che la lettera compare nella i-esima posizione\n\tper ogni posizione cerco la lettera che compare più spesso e la metto in s\nritorno s\n", 
+    "tags": ["File", "Stringhe", "Dizionari", "Ordinamento"], 
+    "effort": 3,
+    "clues": [],
+    "from":"esame-8-1-19"
+}

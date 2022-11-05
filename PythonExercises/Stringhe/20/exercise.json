@@ -1,0 +1,10 @@
+{
+	"id": 20,
+	"description": "Trasformazione di una stringa in numero tramite somma dei valori dei caratteri",
+	"text": "\n Si consideri l'ordine alfabetico delle 21 lettere dell'alfabeto italiano:\n A – B – C – D – E – F – G – H – I – L – M – N – O – P – Q – R – S – T – U – V – Z\n definiamo valore di una lettera la posizione che occupa in quest'ordine a partire da 1\n (ad esempio il valore di A e' 1 mentre il valore di Z e' 21). \n La funzione  es3(stringa1) presa la stringa stringa1 \n contenente parole sull'alfabeto italiano separate da uno spazio, restituisce la stringa \n che si ottine sostituendo a ciasuna parola presente in  stringa1 \n la stringa numerica che si ottiene sommando  il valore delle lettere che compongono la parola.\n Non si distingue tra lettere maiuscole e minuscole).\n Ad esempio con stringa1='Angelo Monti Andrea Sterbini e Angelo Spognardi' la funzione restituira' \n la stringa '48 63 39 88 5 48 93'\n",
+	"algorithm": "",
+	"tags": ["Stringhe"],
+	"clues": [],
+	"effort": 4,
+	"source": "recupero-7-11-18"
+}

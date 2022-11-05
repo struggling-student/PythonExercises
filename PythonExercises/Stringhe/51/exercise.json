@@ -1,0 +1,10 @@
+{
+    "id": 51,
+    "description": "Dati in input una lista di parole ls e un carattere c, cancella da ls tutte le parole che contengono c, ritorna il numero di parole eliminate",
+    "text": "\n    progettare la funzione es7(ls,c) che: \n    - riceve  in input una lista di parole ls ed un carattere c\n    - cancella da ls le parole che contengono il carattere c (sia in maiuscolo che in minuscolo)\n    - restituisce il numero di parole cancellate da ls. \n    Nota che al termine della funzione la lista passata come parametro deve risultare modificata\n    (ricorda che le liste sono mutabili). \n     ESEMPI:\n     Se ls=[ 'Angelo', 'Andrea', 'Fabio', 'Francesco', 'Lucio','Luca', 'Ugo'] e c='a'\n     la funzione restituisce 5 e la lista ls diventa ['Lucio','Ugo']  \n     Se ls=[ 'Angelo', 'Andrea', 'Fabio', 'Francesco', 'Lucio', 'Luca','Ugo'] e c='G'\n     la funzione restituisce 2 e la lista ls diventa ['Andrea', 'Fabio', 'Francesco', 'Lucio','Luca']\n    ",
+    "algorithm": "Crea una nuova lista\n\tper ogni parola di ls:\n\t\tse non contiene c\n\t\t\taggiungi la parola alla lista\ninizializza count come differenza della lunghezza di ls con la lunghezza della nuova lista\nimposta ls uguale alla nuova lista\nritorna count",
+    "tags": ["Stringhe", "Liste"],
+    "effort": 3,
+    "clues": [],
+    "from": "recupero-19-9-18"
+}

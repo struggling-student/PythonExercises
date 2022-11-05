@@ -1,0 +1,10 @@
+{
+    "id": 24,
+    "description": "Dati un file e una lista di caratteri, ritorna una lista di tuple, ogni tupla composta da un carattere nella lista in input e la percentuale di occorrenze del carattere nel file.",
+    "text": "\n   Scrivere la funzione es24(filename, listacar) che prende in input il nome di un file\n   e una lista di caratteri e produce una lista di tuple. (carattere, stringa)\n   Per ogni carattere nella lista di caratteri si calcola la\n   sua percentuale di occorrenze nel contenuto del file ignorando le differenze \n   tra maiuscola e minuscola. \n   Ciascuna tupla del risultato ha come primo elemento un carattere della lista\n   e come secondo elemento la stringa che si ottiene dalla percentuale \n   rispetto al numero totale di caratteri alfabetici (ovvero per cui isalpha() e' True)\n   arrotondata alla seconda cifra decimale seguita dal carattere '%'.\n   La lista di tuple deve essere ordinata in ordine decrescente di percentuale, \n   a parita' di stringa percentuale le tuple devono essere ordinate alfabeticamente.\n\nEs: se il file 'pippo' contiene la sequenza di caratteri \"sono proprio cOntentO\", \nla chiamata es24('pippo',['o','i', 'S']) ritorna la lista\n[('o', '31.58%'), ('S', '5.26%'), ('i', '5.26%')]\n",
+    "algorithm": "Leggi il file di testo\ntrasforma il testo in minuscolo\ninizializza un dizionario e un counter\nper ogni carattere\n\tse è alfabetico\n\t\tincrementa il counter\nper ogni caratttere della lista\n\tinserisci il carattere nel dizionario con valore il numero di occorenza che ha nel testo\nper ogni carattere\n\tcalcola la percentuale\n\tarrotonda la percentuale a 2 cifre decimali\nritorna la lista ordinata con le tuple (carattere, percentuale)",
+    "tags": ["File", "Stringhe", "Liste", "Ordinamento"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-12-7-18"
+}

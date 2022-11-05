@@ -1,0 +1,10 @@
+{
+    "id": 50,
+    "description": "Dati una stringa di cifre s e un numero intero k, ritorna la lista delle sottostringhe di s lunghe k che hanno i caratteri in odine strettamente crescente",
+    "text": "\n    progettare la funzione es5(s,k) che: \n    - riceve  in input una stringa s di caratteri che sono le cifre da  '0' a '9'  ed un intero k \n    - costruisce la lista con  le diverse sottostringhe  di s  i cui caratteri sono in \n      ordine strattamente crescente.\n    - restituisce la lista dopo averne ordinato gli elementi in ordine decrescente\n   Nota che la lista non deve contenere duplicati. \n   Si ricorda che una sottostringa di s e' quello che si ottiene da s eliminando 0 o piu' \n   caratteri iniziali  e 0 o piu' caratteri finali.\n   ESEMPI: \n   con  s='9135918246556' e k=3 la funzione restituisce la lista ['359','246', 135']\n   con  s='1234123412341234' e k=3 la funzione restituisce la lista ['234',123']\n   con  s='987654321' e k=3 la funzione restituisce la lista []\n    ",
+    "algorithm": "Definisci una nuova funzione crescente(s):\nper ogni carattere di s, fino al penultimo:\n\tse il carattere è maggiore o uguale al carattere successivi:\n\t\tritorna False\n\tritorna True\n\n\ninizializza un insieme contenete tutte le sottostringhe di s, di lunghezza k, per cui crescente() torna True:\nritorna la lista ordinata dell'insieme",
+    "tags": ["Stringhe", "Ordinamento"],
+    "effort": 3,
+    "clues": [],
+    "from": "recupero-19-9-18"
+}

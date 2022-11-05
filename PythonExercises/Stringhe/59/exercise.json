@@ -1,0 +1,10 @@
+{
+    "id": 59,
+    "description": "Dato un file di testo con all'interno righe di interi, ritorna una stringa di '0' o '1', all'i-esima posizione la stringa contiene '1' se la somma degli interi dell'i-esima riga del file è dispari.",
+    "text": "\n    La funzione es6(ftesto) che restituisce una stringa di caratteri '0' oppure '1'.\n    La stringa ha tanti caratteri '0' o '1' quante sono le righe nel file di testo  il cui\n    percorso e' dato da ftesto. Il file di testo contiene righe di interi separati da un\n    numero arbitrario di spazi.\n    L'i-esimo carattere della stringa e' '0' se la somma degli interi presenti nell'i-esima riga del file\n    e' un numero pari. L'i-esimo carattere della stringa e' '1' se la somma degli interi presenti\n    nell'i-esima riga del file  e' un numero pari.\n    ",
+    "algorithm": "Inizializza una stringa vuota\napri il file:\n\tper ogni riga:\n\t\ttrasforma la riga in un array di interi\n\t\taggiungi alla stringa il modulo 2 della somma di tutti gli elementi dell'array\nritorna la stringa",
+    "tags": ["File", "Stringhe"],
+    "effort": 4,
+    "clues": [],
+    "from": "recupero-23-1-18"
+}

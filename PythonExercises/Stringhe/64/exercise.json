@@ -1,0 +1,10 @@
+{
+    "id": 64,
+    "description": "Data in input una lista di interi, produce una stringa con i numeri della lista inverticale, una cifra per riga.",
+    "text": "\n    Scrivere la funzione es8 che prende come input una lista di\n    interi non negativi e produce una stringa contenente i numeri della lista in verticale,\n    una cifra per riga, allineando le cifre delle unita' alla riga piu' in basso.\n\n    Es: es8([5,69,2090]) torna la stringa\n        2\n        0\n      6 9\n    5 9 0\n    ",
+    "algorithm": "salva in m il numero massimo della lista\ninizializza rows come il numero di cifre di m\nper ogni numero della lista:\n\taggiungi ad una nuova lista la stringa del numero, le stringhe saranno tutte lunghe rows e devono avere le cifre del numero allineate a destra(funzione .format())\ninizializza ris come stringa vuota\nper i che va da 0 a rows-1:\n\tinizializza una stringa s vuota\n\tper ogni stringa in ls\n\t\taggiungi a s la il carattere stringa[i] separato da uno spazio\n\taggiungi a s un a capo\n\taggiung s a ris\nritrona ris",
+    "tags": ["Stringhe", "Liste"],
+    "effort": 4,
+    "clues": [],
+    "from": "esame-12-7-18"
+}
