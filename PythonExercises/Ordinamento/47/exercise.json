@@ -1,0 +1,10 @@
+{
+    "id": 47,
+    "description": "Data in input una lista di stringhe, restituisce una la lista ordinata senza duplicati",
+    "text": "\n    progettare la funzione es47(lista) che\n    prende in input una lista di stringhe, e restituisce una lista di stringhe.\n    La lista da restituire e' quella che si ottiene dalla lista di input dopo averne eliminato i duplicati,\n    e in cui le stringhe sono state ordinate per lunghezza crescente ed a parita' di lunghezza  per ordine\n    lessicografico decrescente.\n    Al termine della funzione la lista passata in input non deve risultare modificata.\n\n    Ad esempio: per lista=[ 'uuu','ccc','a','aa','d','z','zzz','uuu','z','z','uuu']:\n    e la funzione restituira' la lista\n    ['z','d','a','aa','zzz','uuu','ccc']\n    mentre la lista di input non risultera' modificata.\n    ",
+    "algorithm": "trasforma la lista in un insieme\nritorna la lista ottenuta ordinando l'insieme",
+    "tags": ["Stringhe", "Ordinamento"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-19-6-18"
+}

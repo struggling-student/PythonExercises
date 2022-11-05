@@ -1,0 +1,10 @@
+{
+    "id": 26,
+    "description": "Dati una tabella e il nome di una colonna della tabella, si ordinano le righe della tabella secondo i valori contenuti nella colonna, si ritorna il numero di colonne della tabella.",
+    "text": " \n    Si implementi la funzione es26(tabella,colonna) che presi in input\n    - una tabella rappresentata tramite lista di dizionari\n    - una stringa con il nome di una delle colonne della tabella\n    modifica distruttivamente la tabella riordinandone le righe in ordine decrescente rispetto \n    ai valori contenuti nella  colonna indicata. La funzione deve restituire il numero di colonne della tabella.\n        Ad esempio con  tabella = [{'nome': 'Bruno', 'anno': 1981 ,'tel': 5558432},{'nome': 'Sofia', 'anno': 1973 ,'tel': 5553546}]\n    al termine di es26(dati, 'anno')  la  tabella sara' stata modificata in \n    [{'nome': 'Bruno', 'anno': 1981 ,'tel': 5558432},{'nome': 'Sofia', 'anno': 1973 ,'tel': 5553546}]\n    e restituisce il numero di colonne 3.\n    ",
+    "algorithm": "Ordina la lista passando come chiave di ordinamento la colonna della tabella\nritorna la lunghezza della prima riga della tabella",
+    "tags": ["Dizionari", "Ordinamento", "Liste"],
+    "effort": 2,
+    "clues": [],
+    "from": "recupero-15-2-18"
+}
