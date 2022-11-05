@@ -1,0 +1,63 @@
+# ----> ITALIAN <----
+# Dato a intero positivo (da 0 a 255) inserito da tastiera, 
+# scrivere il valore binario di a al contrario. Esempio:
+# INPUT (a): 5 (cioè 00000101)
+# OUTPUT: 160 (10100000)
+# INPUT (a): 105 (cioè 01101001)
+# OUTPUT: 150 (10010110)
+
+.eqv CONT $t5
+.eqv INCR $t6
+.text
+.globl main
+main:
+	li INCR,1 # INCREMENTO IL CONTATORE DI UNO AD OGNI CICLO
+	li CONT,0 # INIZIALIZZO IL CONTATORE A 0
+	li $t7,8 # CARICO IN t7 IL VALORE OTTO, OVVERO IL NUMERO DI BIT
+	li $t1,2 # CARICO IN t2 IL VALORE DUE, OVVERO IL DIVISORE
+	li $v0,5 # INPUT NUMERO INTERO DA TASTIERA 
+	syscall
+	move $t0,$v0
+WHILE:
+	bnez  $t0, DO_WHILE # SE IL VALORE IN t0 NON E' UGUALE A 0 DO WHILE SE NO OUT WHILE
+	j OUT_WHILE
+DO_WHILE:
+
+	div $t0,$t1 # DIVISIONE TRA NUMERO IN INPUT E DUE  
+	add CONT,CONT,INCR # AGGIORNO IL CONTATORE
+	mfhi $t2 # SPOSTO IL RESTO IN t2
+	mflo $t3 # SPOSTO IL QUOZIENTE IN t3
+	
+	move $t0,$t3 # SPOSTO IN t0 IL QUOZIENTE  
+IF:
+	bnez $t2, DO_IF # SE IL RESTO NON E' UGUALE A 0 DO IF SE NO OUT IF
+	j OUT_IF # JUMP
+DO_IF:
+	li $t9,1 # CARICO IN t9 IL VALORE 1
+	
+	move $a0,$t9 # PRINTO SU CONSOLE IL VALORE CHE HO IN t9
+	li $v0,1
+	syscall
+
+	j WHILE # JUMP
+OUT_IF:
+	li $t8,0 # CARICO IN  t8 IL VALORE 0
+	
+	move $a0,$t8 # PRINTO SU CONSOLE IL VALORE CHE HO IN t8
+	li $v0,1
+	syscall
+	 
+	j WHILE # JUMP
+OUT_WHILE:
+CICLO: 
+	bge $t5,$t7,FINE # SE IL VALORE DEL CONTATORE E' MAGGIORE O UGUALE DI 8 ALLORA VADO ALLA FINE
+	add CONT,CONT,1 # AGGIORNO IL CONTATORE
+	li $t6,0  # INZIALIZZO IL REGISTRO t6 A ZERO
+	move $a0,$t6 # PRINTO SU CONSOLE IL VALORE CHE HO IN t6
+	li $v0,1
+	syscall
+	j CICLO # JUMP
+FINE:	
+	li $v0,10 # CHIUDO IL PROGRAMMA 
+	syscall
+.data
