@@ -1,0 +1,10 @@
+{
+    "id": 23,
+    "description": "Dati un file JSON e un file PNG, estrarre la matrice dal file JSON, la matrice è composta da pixel codificati in stringhe da 9 caratteri, decodificare i pixel e salvarli nel file PNG, ritornare il colore che compare più spesso",
+    "text": "\n    Abbiamo un file di tipo json contenente una matrice (lista di liste) M i cui elementi \n    sono stringhe. La matrice e' il risultato della codifica di un'immagine.\n    L'immagine ha ampiezza w e altezza h dove w e' il numero di colonne della matrice M e h \n    il numero di righe. Il colore (r,g,b) del  pixel di coordinate x,y e' codificato con \n    la stringa presente in M[y][x], piu' precisamente la stringa e' composta da 9 cifre. \n    Le tre piu' significative sono la codifica di r, le tre centrali sono la codica di g e le tre \n    meno significative la codifica di b.  \n\n    Scrivete la funzione es7(fileJson, filePng) che riceve come argomenti:\n        :param fileJson: il path del file json dove si trova la matrice dell'immagine codificata\n        :param filePng:  il path del file PNG dove salvare l'immagine decodificata.\n        :return: il colore che appare piu' spesso tra quelli dei pixel dell'immagine (a parita'\n        viene selezionato il colore che precede nell'ordinamento crescente \n        rispetto alla prima, alla seconda e poi alla terza coordinata).\n    ",
+    "algorithm": "Caricare il filejson\ninizializzare una matrice e un dizionario\nper ogni elemento della matrice in input:\n\ndecodifica il pixel\n\tsalva il pixel nella matrice vuota\n\taggiorna il valore nel dizionario per il pixel\nsalva l'immagine\nritorna il pixel che compare più spesso",
+    "tags": ["Stringhe", "Matrici", "Immagini"],
+    "effort": 5,
+    "clues": [],
+    "from": "recupero-12-7-18"
+}

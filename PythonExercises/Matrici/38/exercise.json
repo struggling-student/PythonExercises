@@ -1,0 +1,10 @@
+{
+    "id": 38,
+    "description": "Dato un labirinto, sotto forma di lista di liste, ritorna le coordinate (x, y) della cella situata più in basso e più a destra, raggiungibile dalla cella (0, 0)",
+    "text": "\n    Un labirinto e' rappresentato tramite una griglia.\n    Le posizioni delle celle del labirinto sono determinate dalle coppie  (x,y) dove y e' la riga ed x la colonna\n    in cui si trova la cella.\n    La cella in alto a sinistra ha coordinate (0,0).\n    Le celle della griglia contengono l'intero 0 (libera) o l'intero 1 (ostacolo).\n    E possibile spostarsi tra due celle adiacenti con soli due tipi di mosse:\n    - dall'altro verso il basso  (vale a dire da una generica cella  (x,y) alla cella  (x,y+1) )\n    - da sinistra verso destra   (vale a dire da una generica cella  (x,y) alla cella  (x+1,y) )\n    Ci si puo' spostare in una cella solo se questa contiene l'intero 0 (e' vuota)\n    Una cella (x,y) e' raggiungibile se esiste una sequenza di mosse che partendo dalla cella (0,0) permette di raggiungerla.\n    Si implementi la funzione es38(labirinto) che, dato un labirinto rappresentato come lista di liste, \n    restituisca le coordinate (x, y) della cella raggiungibile situata piu' in basso e a parita' quella piu' a destra.\n    Ad esempio per il labirinto di dimensioni 7x7:\n    0001000\n    1000010\n    0001010\n    1010010\n    0011010\n    1001011\n    0110100\n    la funzione deve restituire la tupla (4, 5).\n    Nota bene: La lista di liste non deve essere modificata dalla funzione.  \n    ",
+    "algorithm": "Copiio il labirinto in lab\nmarco la prima cella di lab come raggiungibile\nimposto la posizione iniziale (0, 0) come posizione più distante raggiungibile\nscandisco la matrice per ogni cella\n\tse la cella è a destra di una cella raggiungibile o se è sotto una raggiungibile\n\t\tmarco la cella come raggiungibile\n\t\timposto la posizione della cella come più lontana raggiungibile\nritorno la posizione",
+    "tags": ["Matrici"],
+    "effort": 8,
+    "clues": [],
+    "from": "recuper-16-3-18"
+}

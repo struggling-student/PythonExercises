@@ -1,0 +1,10 @@
+{
+    "id": 16,
+    "description": "Dati in input una stringa s e un intero k, si ritorna una lista ordinata contenente le diverse sottostringhe di s in cui compaiono esattamente k caratteri distinti",
+    "text": "\n    Es 5: 3 punti\n    progettare la funzione es16(s,k) che: \n    - riceve  in input una stringa s di caratteri   ed un intero k \n    - costruisce la lista con  le diverse sottostringhe  di s  in cui compaiono \n      esattamente k caratteri distinti\n    - restituisce la lista delle sottostringhe dopo averla ordinata  per\n      lunghezze decrescenti e, a parita' di lunghezza, in ordine lessicografico\n   Nota che la lista non deve contenere duplicati.\n   Si ricorda che una sottostringa di s e' quello che si ottiene da s eliminando 0 o piu' \n   caratteri iniziali  e 0 o piu' caratteri finali.\n   ESEMPI: \n   con  s='aabbb' e k=1 la funzione restituisce la lista ['bbb', 'aa', 'bb', 'a', 'b']\n   cons s='bcafedg' e k=3 la funzione restituisce la lista ['afe', 'bca', 'caf', 'edg', 'fed']\n   cons s='ccaabbdd' e k=3 la funzione restituisce la lista \n        ['aabbdd', 'ccaabb', 'aabbd', 'abbdd', 'caabb', 'ccaab', 'abbd', 'caab']\n    ",
+    "algorithm": "inizializzo una lista e un insieme vuoti\nper ogni sottostringa di s, di lunghezza almeno k\n\taggiungo la sottostringa all'insieme\nper ogni stringa nell'insieme\n\tcontrollo che abbia esattamente k caratteri\n\tse si l'aggiungo alla lista\nordino la lista\nritorno la lista ordinata",
+    "tags": ["Liste", "Stringhe", "Ordinamento"],
+    "effort": 3,
+    "clues": [],
+    "from": "recupero-7-11-18"
+}

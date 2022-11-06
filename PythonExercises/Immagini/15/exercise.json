@@ -1,0 +1,10 @@
+{
+    "id": 15,
+    "description": "Dati 3 path ad immagini, si prende le prime due immagini e si crea una terza immagine salvandola nel terzo path dato in input, si ritorna il numero di pixel presenti in tutte e due le immagini",
+    "text": "    \n    Es 3: 6 punti\n    Si definisca la  funzione es3(fimm1,fimm2,fimm3) che, \n    - riceve gli  indirizzi di due file .PNG da leggere (fimm1 e fimm2) e l'indirizzo \n      di un file (fimm3) da creare.\n    - legge le due immagini DI DIMENSIONI DIVERSE e crea la terza immagine da salvare all'indirizzo fimm3.\n      La terza immagine si ottiene dalle prime due. Ha ampiezza  massima tra \n      le ampiezze  di fimm1 e fimm2 ed  altezza massima tra le altezze di fimm1 e fimm2.\n      Per quanto riguarda i colori dei pixel della nuova immagine:\n      il pixel [y][x] avra' colore nero (vale a dire (0,0,0)) se presente in entrambe\n      le immagini originarie o in nessuna delle due. In caso contrario assumera' il   colore \n      del pixel dell'unica immagine originaria in cui e' presente.\n      (guardate le immagini di test per chiarimenti)\n    - salva l'immagine creata all'indirizzo fimm3\n    - calcola  il numero di pixel di colore nero presenti  nell'immagine creata.\n      - restituisce il valore calcolato\n    Per caricare e salvare i file PNG si possono usare load e save della libreria immagini.\n    ",
+    "algorithm": "Carico le 2 immagini e prendo le grandezze massime\ninizializzo una variabile counter a 0\nper ogni pixel nella nuova immagine\n\tcontrollo se il pixel è interno a tutte e due le immagini\n\t\tinserisco un pixel nero e aggiorno il counter\n\tse non è interno a nessuna immagine\n\t\tinserisco un pixel nero e aggiorno il counter\n\taltrimenti inserisco un pixel uguale al pixel interno ad una delle due immagini\n\taggiorno il counter se il pixel è nero\nsalvo l'immagine\nritorno il valore del counter",
+    "tags": ["Immagini", "File"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-7-11-18"
+}

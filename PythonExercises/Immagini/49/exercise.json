@@ -1,0 +1,10 @@
+{
+    "id": 49,
+    "description": "Prende in input l'indirizzo di tre file png, crea un'immagine tramite le immagini contenute nei primi due file png e la salva nel terzo indirizzi, ritorna il numero di pixel per cui r+g+b è un numero dispari.",
+    "text": "\n    Si definisca la  funzione es49(fimm1,fimm2,fimm3) che, \n    - riceve gli  indirizzi di due file .PNG da leggere (fimm1 e fimm2) e l'indirizzo \n      di un file (fimm3) da creare.\n    - legge le due immagini e crea la terza immagine da salvare all'indirizzo fimm3. \n      La terza immagine si ottiene dalle prime due. Ha ampiezza  minima tra \n      le ampiezze  di fimm1 e fimm2 ed  altezza minima tra le altezze di fimm1 e fimm2.\n      il pixel [i][j] dell'immagine ha lo stesso colore del pixel corrispondente\n      dell'immagine fimm1 se i e j sono entrambi numeri pari o entrambi numeri dispari, \n      ha il colore del pixel corrispondente in  fimm2 altrimenti\n    - salva l'immagine creata all'indirizzo fimm3\n    - calcola  il numero di pixel presenti nell'immagine creata per i quali  la somma delle \n      tre coordinate del colore e' un numero dispari.\n      - restituisce il valore calcolato\n    Per caricare e salvare i file PNG si possono usare load e save della libreria immagini.\n    ",
+    "algorithm": "Carica le due immagini in img1 e im2\nprendo le dimensioni delle due immagini\ncalcola la dimensione dell'immagine da creare min(..)\ninizializza la nuova immagine con tutti i pixel neri\ninizializza il counter per i pixel dispari\nper ogni pixel dell'immagine\n\tse le cordinate del pixel sono un numero pari:\n\t\tinseriesci il pixel della prima immagine\naltrimenti inserisci il pixel della seconda immagine\n\tse la somma r+g+b è dispari:\n\t\taumenta il counter\nsalva l'immagine\nritorna il counter",
+    "tags": ["Immagini"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-19-9-18"
+}

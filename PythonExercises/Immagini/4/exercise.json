@@ -1,0 +1,10 @@
+{
+    "id": 4, 
+    "description": "Prende in input un'immagine, un path, e due numeri, modifica l'immagine secondo i due numeri, salva l'immagine al path e ritorna il colore che compare più spesso nell'immagine", 
+    "text": "\n    Si definisca la  funzione es8(fimm,fimm1) che, \n    - riceve gli  indirizzi fimm e fimm1 di due file .PNG. e due interi h1 e w1 maggiori di zero.\n    - legge l'immagine da fimm e crea una seconda  immagine. L'immagine da creare \n      ha h1 volte la lunghezza di quella letta e w1 volte la larghezza di quella letta e si ottiene \n      sostituendo ad ogni pixel dell'immagine letta un rettangolo di pixels di altezza h e ampiezza w aventi \n      tutti il colore del pixel originario.\n    - salva l'immagine creata all'indirizzo fimm.\n    - restituisce la tupla con il colore che compare piu' spesso nell'immagine letta e in \n    caso di parita' di occorrenze massime il colore del pixel che viene prima lessicograficamente.\n    Per caricare e salvare i file PNG si possono usare load e save della libreria immagini.\n    ", 
+    "algorithm": "", 
+    "tags": ["Immagini"], 
+    "effort": 5,
+    "clues": [],
+    "from":"esame-7-11-18"
+}

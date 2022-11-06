@@ -1,0 +1,10 @@
+{
+    "id": 9, 
+    "description": "Prende in input un path, ritorna una lista di coppie (nome cartella, spazio occupato da file .txt nella cartella in byte), la lista deve essere ordinata per spazio e poi per nome se lo spazio occupato coincide", 
+    "text": "\n    Es 6: 3 punti\n    Si definisca la funzione es6(pathDir ) ricorsiva (o che fa uso di funzioni o \n    metodi ricorsive/i) che:\n    - riceve come argomento l'indirizzo di una cartella.\n    - restituisce una lista contenente i nomi delle sottocartelle in essa contenute a\n      qualsiasi livello e per ogni sottocartella anche lo spazio  (in byte) occupato all'interno \n      della cartella da eventuali file di tipo .txt.\n      La lista contiene dunque coppie, il primo elemento della coppia e' il nome di \n      una sottocartella ed il secondo e' lo spazio occupato dai file .txt presenti nella\n      sottocartella.\n      Le coppie devono comparire nella lista ordinate in modo decrescente rispetto \n      alla loro seconda componente e  a parita' vanno ordinate poi in modo lessicografico \n      crescente rispetto alla prima componente.\n      File e cartelle il cui nome comincia  col carattere '.' non vanno considerati. \n      \n      Ai fini dello svolgimento dell'esercizio possono risultare utili \n      le seguenti funzioni nel modulo os:\n      os.listdir(), os.path.isfile(), os.path.isdir(), os.path.basename(), \n      os.path.getsize()\n\n    Esempio: con es6('Informatica/Software') viene restituita la lista:\n    [('SistemiOperativi', 287), ('Software', 10), ('BasiDati', 0)]\n\n", 
+    "algorithm": "creo una funzione che mi ritorna la lista di tutti i path delle cartelle a partire dal path di input\nper ogni cartella nella lista\n\tcalcolo lo spazio dei file di tipo .txt\n\taggiungo il nome della cartella e lo spazio alla lista finale\nordino la lista e la ritorno", 
+    "tags": ["Ricorsione", "File", "Ordinamento"], 
+    "effort": 3,
+    "clues": [],
+    "from":"esame-8-1-19"
+}

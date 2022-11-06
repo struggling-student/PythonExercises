@@ -1,0 +1,10 @@
+{
+    "id": 21,
+    "description": "Data una matrice di caratteri, ritorna una nuova matrice con le colonne in ordine lessicografico rispetto alla matrice in input",
+    "text": "\n    Es 5: 4 punti\n    es5(matrice) presa la matrice di caratteri rappresentata tramite una lista di liste di caratteri, \n    la restituisce dopo averne ordinato le colonne in ordine lessicografico. \n    La matrice passata in input al termine della funzione non deve risultare modificata.  \n    Ad esempio se la matrice di input e'\n     [['q','s','g','g'],\n      ['b','a','m','f'],\n      ['a','b','n','z']] \n    la funzione restituira' la matrice:\n     [['a','a','g','f'],\n      ['b','b','m','g'],\n      ['q','s','n','z']]     \n",
+    "algorithm": "Inizializzo una matrice m vuota uguale alla matrice in input\nper ogni colonna\n\tsalvo la colonna in una lista\n\tordino la colonna\n\tinserisco gli elementi della colonna ordinata in m\nritorno m",
+    "tags": ["Matrici", "Ordinamento"],
+    "effort": 4,
+    "clues": [],
+    "from": "recupero-12-7-18"
+}

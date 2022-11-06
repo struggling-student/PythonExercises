@@ -1,0 +1,10 @@
+{
+    "id": 19,
+    "description": "Dato un file con all'interno una matrice, si ritorna una tupla di due valori, il primo: la matrice sotto forma di lista di liste, il secondo: la somma della cornice",
+    "text": "\n    Es 10: 6 punti\n    Una matrice  di interi e' registrata all'interno di un file di testo.\n    Il file contiene linee vuote inframmezzate a  linee corrispondenti alle righe della matrice. \n    All'interno  delle linee corrispondenti alle righe della matrice ciascun  intero della \n    riga della matrice compare preceduto da uno o piu' spazi.\n    Si veda ad esempio il file fm10_1.txt dove e' registrata la matrice:\n     1 20  3 40  5\n    60  7  8  9 10\n    11 12 13 14 15\n    Si definisca la  funzione es10(ftesto) che, \n    - riceve l'indirizzo di un file di testo in cui e' registrata la matrice di interi.\n    - restituisce una coppia (tupla) contenente:\n        - la matrice nel formato di lista di liste di interi\n        - la somma degli elementi della cornice esterna della matrice (prima e ultima riga e prima e ultima colonna)\n    Ad esempio per il filefm10_1.txt la funzione es10 deve restituire:\n        ([[ 1, 20,  3, 40,  5],\n          [60,  7,  8,  9, 10],\n          [11, 12, 13, 14, 15]],\n          204)\n    ",
+    "algorithm": "Inizializzo la matrice vuota e la cornice a 0\napro il file\nper ogni riga:\n\tse è una riga della matrice:\n\t\ti numeri li aggiungo ad una lista\n\t\taggiungo la lista alla matrice\nchiudo il file\ncalcolo il valore della cornice\nritorno la tupla (matrice, cornice)",
+    "tags": ["File", "Stringhe", "Matrici"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-7-11-18"
+}

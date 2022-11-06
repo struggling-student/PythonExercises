@@ -1,0 +1,10 @@
+{
+    "id": 42,
+    "description": "Dati in input 3 file, 2 immagini e un file di testo, modifica alcuni pixel della prima immagine, specificati nel file di testo, e salva la nuova immagine nella seconda immagine, ritorna il numero di pixel modificati.",
+    "text": "\n    Si progetti la funzione es42(fImageIn, fcolori, fImageOut) che\n    modifica il colore di alcuni pixel presenti in un imagine  PNG fImageIn  e salva poi l'immagine\n    modificata  in un nuovo file PNG FImageOut.\n    La funzione inoltre ritorna il numero di pixel dell'immagine i cui colori sono stati modificati.\n    I colori da modificare sono specificati dal file di testo fcolori.\n    Il file fcolori ha tante righe quanti sono i colori da modificare.\n    Ogni riga di fcolori contiene  6 interi a valori tra 0 e 255.\n    I primi tre indicano il colore da modificare\n    e i secondi tre il nuovo colore\n    Ad esempio la presenza eventuale della riga\n    0 0 0  255 255 255\n    indica che nell'immagine tutti  i pixel di colore nero ( i.e. di colore  (0,0,0)) devono\n    assumere colore bianco (i.e. devono assumere colore (255,255,255)).\n\n    NOTA: i colori devono essere sostituiti contemporaneamente\n    (e non con una sostituzione alla volta che potrebbe modificare un pixel piu' volte)\n\n    :param fImageIn: nome del file PNG contenente l'immagine da modificare\n    :param fcolori: nome del file di testo in cui trovare i colori da modificare\n    :param fImageOut: nome del file PNG in cui salvare l'immagine modificata\n    :return: numero di pixel modificati\n    ",
+    "algorithm": "Carica la matrice della prima immagine\nsalva le dimensioni dell'immagine\ninizializza un counter per i pixel modificati\ninizializza un dizionario vuoto\napri il file di testo:\n\tper ogni riga:\n\t\tsalva nel dizionario la coppia chiave-valore vecchio_colore: nuovo_colore\nper ogni pixel dell'immagine:\n\tse il pixel è una chiave del dizionario:\n\t\tmodifica il pixel\n\t\taumenta il counter\nsalva l'immagine\nritorna il counter",
+    "tags": ["File", "Immagini"],
+    "effort": 3,
+    "clues": [],
+    "from": "recupero-19-6-18"
+}

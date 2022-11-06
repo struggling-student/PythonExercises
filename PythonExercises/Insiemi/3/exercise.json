@@ -1,0 +1,10 @@
+{
+    "id": 3, 
+    "description": "Prende in input due insiemi di numeri naturali, ritorna una lista di triple (a, b, c) tali che: a < b < c e a + b + c sono nei due insiemi in input", 
+    "text": "\n    progettare la funzione es3(ins1, ins2) che: \n    - riceve  in input due insiemi  di numeri naturali \n    - trova le terne (a,b,c) con a,b e c in insi1 con la proprieta' che a<b<c e a+b+c e' in insi2 \n    - restituisce l'insieme di tutte le triple trovate.\n      Nella lista restituita le triple devono essere  rappresentate tramite tuple e le \n      varie tuple devono comparire nella lista per somma di componenti crescenti e in caso di parita'\n      in ordine lessicografico crescente.\n     ESEMPIO:\n     se ins1={ 2,4,5,6,8,9} e ins2={5,15,19,25} la funzione restituisce la lista\n     [(2, 4, 9), (2, 5, 8), (4, 5, 6), (2, 8, 9), (4, 6, 9), (5, 6, 8)]\n    ", 
+    "algorithm": "es3(ins1, ins2):\n\tse l'insieme 1 ha meno di 3 elementi:\n\t\tritorna []\n\tsalva gli elementi di ins1 in una lista l1 e ordinali\n\tinizializza una lista result vuota\n\tper ogni elementi a in l1[:-2]:\n\t\tper ogni elemento b in l1[indice di a + 1: -1]:\n\t\t\tper ogni elemento c in l1[indice di b + 1:]:\n\t\t\t\tse a+b+c è in ins2:\n\t\t\t\t\taggiungi la tupla (a, b, c) a result\n\tordina lessicograficamente result\n\tritorna result ordinato per la somma degli elementi delle tuple", 
+    "tags": ["Insiemi", "Ordinamento", "Liste"], 
+    "effort": 4,
+    "clues": [],
+    "from":"esame-7-11-18"
+}

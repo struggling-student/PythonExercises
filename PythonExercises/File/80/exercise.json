@@ -1,0 +1,10 @@
+{
+    "id": 80,
+    "description": "Dati un path ad una directory e un insieme di parole ( stringhe di caratteri tra 'a' e 'z'), la funzione ricerca nella directory e nelle sue sub-directory eventuali file .txt con all'interno parole contenute nell'insieme passato in input, restituisce un dizionario delle parole trovate.",
+    "text": "ATTENZIONE: usate come separatore dei file il carattere '/' che funziona sia in Windows che in Linux\nATTENZIONE: e' VIETATO usare la funzione os.walk\nSi definisca la funzione  es1(dir1, parole), che presi in input:\ndir1:   il path di una directory\nparole: un insieme di parole (stringhe di caratteri tra 'a' e 'z')\nesegue il seguente lavoro:\nRicerca nella directory il cui path e'  dir1 e nelle sue subdirectories eventuali file con estensione .txt contenenti\nstringhe appartenenti all'insieme delle parole e restituisce un dizionario delle parole trovate.\nNel dizionario restituito devono comparire  solo le parole effettivamente riscontrate all'interno\ndei file con estensione .txt e ciascuna chiave deve avere  come attributo una tupla  di due interi.\nIl primo elemento della tupla riporta il numero complessivo di volte che la parola  e' stata ritrovata in questi file,\nil secondo elemento della tupla riporta la profondita' massima dei file in cui la parola e' risultata presente.\nLa profondita' dei file nella directory dir1 vale 0\nPer parola intendiamo una sequenza di lunghezza massimale di caratteri tra 'a' e 'z'.\nSi puo' assumere che tutti i file con estensione .txt contengono solo parole  separate da  spazi, tab o andate a capo.\n(non sono presenti caratteri maiuscoli o segni di interpunzione)",
+    "algorithm": "",
+    "tags": ["Ricerca File", "File"],
+    "effort": 6,
+    "clues": [],
+    "from": "esame-18-4-18"
+}

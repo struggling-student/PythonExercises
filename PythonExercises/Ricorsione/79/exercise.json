@@ -1,0 +1,10 @@
+{
+    "id": 79,
+    "description": "Data una lista che può essere vuota, contenere interi e avere a suo volta liste del suo stesso tipo, la funzione ricorsivamente inverte la lista e quelle che contiene, ritorna una tupla di 3 elementi.",
+    "text": "\n\n    Si definisca la funzione ricorsiva (o che usa una vostra funzione ricorsiva) es3(lista).\n    La funzione prende in input una lista che puo' essere vuota, contenere interi e/o altre liste del suo stesso tipo.\n    Al termine della funzione la lista deve risultare invertita e lo stesso deve accadere \n    a tutte le liste in essa contenute, ricorsivamente.\n    Inoltre la funzione restituisce una tupla di tre elementi.\n    Al primo posto della tupla deve comparire il numero totale di interi presenti nella lista e nelle sue sottoliste. \n    Al secondo posto della tupla deve comparire la somma di tutti gli interi presenti nella lista e nelle sue sottoliste.\n    Al terzo posto della tupla deve comparire la lista, ordinata in modo crescente, contenente una sola volta i\n    differenti interi presenti nella lista e nelle sue sottoliste.\n    Ad esempio, se all'inizio la lista e'\n     lista = [3, 3, 5, [[1, 8, [9, 3]], 3, [2, [9, [5, 6],[9]] ] ]]\n    alla fine la lista dev'essere\n     lista = [[[[[9], [6, 5], 9], 2], 3, [[3, 9], 8, 1]], 5, 3, 3]\n    la funzione es3(lista) restituisce la tupla \n    (13, 66, [1, 2, 3, 5, 6, 8, 9])\n     ",
+    "algorithm": "es79(lst):\n\tinizializza due variabili a e b a 0\n\tinizializza un insieme ins vuoto\n\tper ogni elemento della lista:\n\t\tse l'elemento è una lista:\n\t\t\timposta x, y e l ai valori ritornati da es79(elemento)\n\t\t\taggiungi s ad a\n\t\t\taggiugni y a b\n\t\t\tunisci l'insieme ins con l'insieme di l\n\t\taltrimenti:\n\t\t\tincrementa a di 1\n\t\t\tincrementa b del valore dell'elemento\n\t\t\taggiungi l'elemento a ins\n\tinverti lst\n\timposta lst1 a la lista ordinata dell'insieme ins\n\tritorna la tupla (a, b, lst1)",
+    "tags": ["Ricorsione", "Liste"],
+    "effort": 5,
+    "clues": [],
+    "from": "esame-18-4-18"
+}

@@ -1,0 +1,10 @@
+{
+    "id": 76,
+    "description": "Data una stringa, la funzione ricorsivamente calcola i suffissi della stringa, restituisce la lista dei suffissi.",
+    "text": "\n    Si definisca la funzione ricorsiva (o che usa una vostra funzione ricorsiva)  \n    es76(parola), che presa in input una stringa di caratteri  parola restituisce la lista dei \n    suffissi di parola. Gli elementi della lista devono risultare ordinati per lunghezza decrescente .\n    Si ricorda che un suffisso di una parola e' quello che si ottiene concellando 0 o piu' \n    caratteri iniziali della parola.\n    Ad esempio per es76(\"fondamenti\") la lista restituita sara'\n    ['fondamenti', 'ondamenti', 'ndamenti', 'damenti', 'amenti', 'menti', 'enti', 'nti', 'ti', 'i']\n    ",
+    "algorithm": "es76(parola):\n\tse parola è vuota:\n\t\tritorna la lista vuota\n\taltrimenti:\n\t\tritorna la lista con elemento parola più la funzione es76(..) con argomento parola meno il primo carattere",
+    "tags": ["Ricorsione", "Stringhe"],
+    "effort": 3,
+    "clues": [],
+    "from": "esame-18-4-18"
+}

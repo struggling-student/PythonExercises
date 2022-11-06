@@ -1,0 +1,10 @@
+{
+    "id": 37,
+    "description": "Data in input una lista di dizionari, si ritorna un dizionario con chiavi, le chiavi comuni ad lameno la meta dei dizionari, e valori un insieme di interi.",
+    "text": " \n    \n    Si implementi la funzione es37(listaDizionari) che presi in input una lista di dizionari\n    restituisce  un dizionario.\n    I dizionari della listaDizionari  hanno come  chiave stringhe di caratteri tra 'a' e 'z' e come attributo liste di interi.\n\n    Il dizionario restituito deve avere come chiavi le chiavi  comuni ad almeno la meta' dei dizionari della lista.\n    A ciascuna chiave x di questo dizionario e' associato un insieme.\n    Un intero deve essere presente nell'insieme associato ad x se e solo se compare come attributo di x\n    in almeno uno dei dizionari della listaDizionari.\n    Ad esempio se la listaDizionari contenente i tre dizionari\n    {'a': [1,3,5],'b':[2,3 ],'d':[3]}, \n    {'a':[5,1,2,3], 'b':[2],'d':[3]},\n    {'a':[3,5], 'c':[4,1,2],'d':[4]}\n    il dizionario restituito sara' {'a':{1,2,3,5},'b':{2,3},'d':{3,4}}\n    ",
+    "algorithm": "inizializzo un dizionario vuoto\nper ogni dizionario\n\tper ogni chiave:\n\t\taggiorno il counter della chiave nel nuovo dizionarion\ninizializzo un nuovo dizionario res\nper ogni dizionario della lista\n\tper ogni chiave - valore del dizionario:\n\t\tse il valore di quella chiave è >= alla lunghezza dellalista/2:\n\t\t\taggiungo chiave valore a res, o faccio l'unione dei due valori per la chiave\nritorno res.",
+    "tags": ["Dizionari", "Insiemi"],
+    "effort": 3,
+    "clues": [],
+    "from": "recuper-16-3-18"
+}

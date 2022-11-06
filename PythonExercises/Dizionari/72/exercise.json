@@ -1,0 +1,11 @@
+{
+    "id": 72,
+    "description": "Dati un path di una directory e un path di un file json, legge ricorsivamente il contenuto della directory e costruisce un dizionario da salvare nel file json. Ritorna il numero massimo di file contenuti in una delle directory.",
+    "text": "Si definisca la funzione  ricorsiva (o che usa una vostra funzione ricorsiva) es72(dir, jsonfile) che, \n    data una directory, ne legge la struttura costruisce ricorsivamente un dizionario da salvare come Json.\nNOTA: Tutti i file e directory che iniziano con '.' devono essere ignorati.\n    Argomenti:\n        dir:      percorso della directory da leggere\n        jsonFile: percorso del file json da scrivere\n    Il dizionario deve contenere come chiavi i nomi dei file/directories e come valori:\n        - se si tratta di un file, la sua dimensione (intero)\n        - se si tratta di una directory, il dizionario che ne descrive il contenuto\n    Il dizionario piu' esterno contiene come chiave il solo nome della directory fornita come argomento.\n    La funzione inoltre ritorna il massimo numero di files/dir contenuto in una delle directory/sottodirectory.\n",
+    
+    "algorithm": "dichiariamo una nuova funzione esploraDir(dir, name), che:\n\tdati il path di una directory e il nome della directory\n\tinizializza un dizionario dizio vuoto\n\tsalva i file della directori in una lista files\n\tsalva nela variabile massimo la lunghezza della lista files\n\tper ogni file in files:\n\t\tcostruisci il path del file\n\t\tse il file è una directory:\n\t\t\tchiama la funzione esploraDir(..) su quella directory, salva il risultato tornato in d e m\n\t\t\tinserisci in dizio d per la chiave f\n\t\t\taggiorna massimo, il max tra massimo e m\n\t\taltrimenti:\n\t\t\tprendi le stats del file\n\t\t\tsalva in dizio il valore della dimensione del file per la chiave file\nritorna dizio e massimo\n\nes72(..)\n\tchiam la funzione esploraDir(..) sulla directory data in input e salva i valori tornati in d e massimo\n\tscrivi il dizionario nel file json\n\tritorna massimo",
+    "tags": ["Ricorsione", "Dizionari", "File", "Json"],
+    "effort": 6,
+    "clues": [],
+    "from": "esame-15-2-18"
+}

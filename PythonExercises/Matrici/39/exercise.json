@@ -1,0 +1,10 @@
+{
+    "id": 39,
+    "description": "Dati un intero n e un path ad un file json, si costruisce una matrice a spirale di ordine n e la si salva nel file json, ritorna la somma dei valori nelle colonne di indice pari",
+    "text": "\n    Dato un intero n, una matrice a spirale di ordine n e' una matrice  di dimensioni n x n\n    che riporta i numeri da 1 a n**2 seguendo un andamento a spirale in senso orario. \n    Ad esempio  la matrice a spirale di ordine 4 e'\n    \n     1  2  3 4 \n    12 13 14 5\n    11 16 15 6\n    10  9  8 7 \n    \n    si definisca la funzione es39(n, jsonFile), che presi come argomenti:\n    - n: intero\n    - jsonFile: il path di un file json\n    registra in formato json nel file jsonFile una matrice a spirale di ordine n rappresentata come lista di liste. \n    La funzione deve anche restituire la somma dei valori presenti nelle colonne \n    di indice pari della matrice.\n    Ad esempio per n=4 il jsonFile conterra'\n     [[1,  2,  3, 4],[12, 13, 14, 5],[11, 16, 15, 6], [10,  9,  8, 7]]\n     e il valore restituito sara' 74.\n    ",
+    "algorithm": "Costruisco una matrice vuota contenente solo 0\ninizializzo x e y a 0\ninizializzo una tupla con le 4 direzioni che si possono prende es. [0, 1] per incrementare la y\nimposto la dir a 0\nper ogni numero intero da 0 a n**2:\n\tinserisco l'intero nella posizione (x, y)\n\tincremento x e y, controllando che rimangano all'interno della matrice e che la nuova posiziona contenga uno 0\ninizializzo una vaiabile somma\n\tper ogni colonna di indice pari:\n\t\tper ogni riga:\n\t\t\tsommo i valori della colonna\nsalvo la matrice nel json\nritorno la somma",
+    "tags": ["Matrici", "Json"],
+    "effort": 5,
+    "clues": [],
+    "from": "recuper-16-3-18"
+}

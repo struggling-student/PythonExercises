@@ -1,0 +1,10 @@
+{
+    "id": 27,
+    "description": "Dati una tabella, un nome di una colonna della tabella e un valore, si eliminano le righe che hanno valore diverso per quella colonna e si elimina la colonna, ritorna il numero di righe eliminate",
+    "text": " \n    Si implementi la funzione es27(tabella, colonna, valore) che presi in input\n    - una tabella rappresentata tramite lista di dizionari\n    - una stringa con il nome di una delle colonne della tabella\n    - un valore\n    modifica distruttivamente la tabella eliminando  la colonna indicata e \n    le righe che in quella colonna avevano valori diversi da valore.\n    La funzione deve poi restituire il numero di righe eliminate.\n    Ad esempio con  tabella = [{'nome': 'Sofia', 'anno': 1973 ,'tel': 5553546},{'nome': 'Bruno', 'anno': 1981 ,'tel': 5558432}]\n    al termine di es27(dati, 'anno', 1981)  verra' restituito il numero 1 e la tabella \n    risultera'  modificata  in [{'nome': 'Bruno','tel': 5558432}]\n\n    ",
+    "algorithm": "Costruisci una nuova tabella, tale che:\n\taggiungi la riga se ha valore della colonna uguale al volore dato in iput\n\tla riga viene aggiunta senza la colonna data in input\nsalva la differenza tra la lunghezza della tabella originale e quella appena creata\nsalva la tabella creata in quella originale\nritorna la differenza",
+    "tags": ["Liste", "Dizionari"],
+    "effort": 2,
+    "clues": [],
+    "from": "recupero-15-2-18"
+}

@@ -1,0 +1,10 @@
+{
+    "id": 71,
+    "description": "Dati una path di una directory e due interi, min e max, cerca ricorsivamente nella directory i file che hanno dimensione compresa tra min e max. Ritorna il dizionario con chiavi i file trovati e valore la profondità in cui è stato trovato il file.",
+    "text": "Si definisca la funzione  ricorsiva (o che usa una vostra funzione ricorsiva) es71(dir, minimo, massimo)\n    che cerca nella directory dir  i files che hanno una dimensione compresa tra minimo e massimo (inclusi).\n    La funzione deve tornare un dizionario che contiene come chiavi i nomi dei files individuati (senza path),\n    e come valori le corrispondenti profondita' (contando la directory 'dir' iniziale come profondita' 0)\n    Nel caso in cui un nome di file sia presente a profondita' diverse, il dizionario deve contenere quella maggiore.\n    Nota: per individuare la dimensione del file potete usare la funzione os.stat\n\n    Test:   date alcune directory contenenti files di dimensioni varie a varie profondita',\n            controllare che il risultato sia il dizionario corretto\n    Test:   che la funzione sia ricorsiva\n",
+    "algorithm": "aggiungi un nuovo argomento alla funzione es71(..), prof, con valore di default 0\ninizializza il dizionario profs, vuoto\nper ogni filename nella directory:\n\tcrea il path del file\n\tse il file è una directory:\n\t\tchiama es71(..) su quella directory, con prof incrementata di 1, salva il risultato in una variabile diz\n\t\tper ogni chiave-valore di diz:\n\t\t\tse la chiave non è nel dizionario profs o il valore della profondità è maggiore del valore per quella chiave in profs:\n\t\t\t\taggiorna il dizionario profs con il nuovo valore\n\taltrimenti:\n\t\tprendi le stat del file\n\t\tse la dimensione del file è compresa tra min e max:\n\t\t\tse il file non è in profs o se la profondità del file in profs è minore della profondità del file appena trovato:\n\t\t\t\taggiorna il valore in profs per quel file\nritorna profs",
+    "tags": ["Ricerca File", "Ricorsione"],
+    "effort": 3,
+    "clues": [],
+    "from": "esame-15-2-18"
+}

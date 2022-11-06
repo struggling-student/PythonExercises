@@ -1,0 +1,10 @@
+{
+    "id": 17,
+    "description": "Dati una lista di parole e un intero k, cancella dalla lista le parole che contengo almeno k caratteri uguali, ritorna il numero di parole cancellate dalla lista",
+    "text": "\n    Es 7: 6 punti \n    progettare la funzione es7(ls,k) che: \n    - riceve  in input una lista di parole ls ed un intero k\n    - cancella da ls le parole che contengono almeno k  caratteri uguali (sia in maiuscolo che in minuscolo)\n    - restituisce il numero di parole cancellate da ls. \n    Nota che al termine della funzione la lista passata come parametro deve risultare modificata\n    (ricorda che le liste sono mutabili). \n     ESEMPI:\n     Se ls=[ 'ananas', 'pera', 'banana', 'melone', 'kiwi','albicocca'] e k=3\n     la funzione restituisce 3 e la lista ls diventa ['pera', 'melone', 'kiwi']  \n     Se ls=[ 'Angelo', 'Andrea', 'Osvaldo', 'Anna', 'Monica', 'Adele'] e k=2\n     la funzione restituisce 4 e la lista ls diventa ['Angelo', 'Monica']\n    ",
+    "algorithm": "Inizializzo una lista vuota e un counter a 0\nper ogni parola nella lista\n\triduco la parola in lowercase\n\tinizializzo un dizionario\n\tper ogni lettera della parola\n\t\tinserisco nel dizionario il numero di volte che compare nella parola\n\tse c'è nel dizionario una lettera con valore >= a k\n\t\tinserisco l'indice della parola nella lista\n\t\taumento il counter\nper ogni indice nella lista\n\telimino la parola dalla lista in input\nritorno il counter",
+    "tags": ["Liste", "Stringhe"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-7-11-18"
+}

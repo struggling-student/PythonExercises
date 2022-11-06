@@ -1,0 +1,10 @@
+{
+    "id": 5,
+    "description": "Presi in input un insieme di stringhe e un intero k, ritorna un insieme contenente le diverse stringhe che si possono ottenere concatenando k volte le stringhe nell'insieme in input", 
+    "text": "\n    Es 11: 6 punti\n    Si definisca la funzione es11(insieme, k) ricorsiva (o che fa uso di funzioni o \n    metodi ricorsive/i) che:\n    - riceve come argomenti un insieme di stringhe  ed un intero k>0 \n    - trova le diverse stringhe che si possono ottenere concatenando k copie delle stringhe \n    originali (una stessa stringa puo' essere utilizzata  piu' volte nelle concatenazioni). \n    - torna come risultato l'insieme delle stringhe trovate.\n    Esempi: sia insieme={'a','bb','c'}\n    1)  es11(insieme, 1) restituisce l'insieme {'a','bb','c'}\n    2)  es11(insieme, 2) restituisce l'insieme {'aa','abb','ac','bba','bbbb','bbc','ca','cbb','cc' }\n    3)  es11(insieme, 3) restituisce l'insieme\n    {'bbca', 'bbbbbb', 'ccc', 'cca', 'caa', 'ccbb', 'bbaa', 'abbc', 'aac', 'abbbb', 'acbb', 'cbbc', \n    'bbbba', 'bbabb', 'cbba', 'cac', 'bbac', 'acc', 'aabb', 'aca', 'bbbbc', 'aaa', 'cbbbb', 'abba', \n    'bbcbb', 'cabb', 'bbcc}\n\n    SUGGERIMENTO: potete simulare il ciclo su k con la ricorsione\n    ", 
+    "algorithm": "definisci una nuova funzione recEs5(insOrig, insResult, k):\n\tse k è uguale a 1:\n\t\tritorna indResult\n\taltrimenti:\n\t\tcrea un nuovo insieme\n\t\tper ogni elemento 2l1 in insOrigin:\n\t\t\tper ogni elemento el2 in insResult:\n\t\t\t\tinserisci nel nuovo insieme la concatenazione di el1 e el2\n\t\tritorna recEs5(insOrig, nuovo insieme, k-1)\n\n\n\nes5(insieme, k)\n\tritorna recEs5(insieme, insieme, k)", 
+    "tags": ["Ricorsione", "Insiemi", "Stringhe"], 
+    "effort": 6,
+    "clues": [],
+    "from":"esame-7-11-18"
+}

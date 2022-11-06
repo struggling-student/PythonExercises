@@ -1,0 +1,10 @@
+{
+    "id": 53,
+    "description": "Dato in input un file, ritorna un dizionario con chiavi degli interi e attributi delle liste di interi.",
+    "text": "\n    Si definisca la  funzione es53(ftesto) che, \n    - riceve l'indirizzo di un file di testo.\n    - restituisce un dizionario con chiavi degli interi e attributi delle liste di interi.\n    Il dizionario da restituire e' contenuto all'interno del file di testo dove e' presente \n    una sequenza di interi \n    inframmezzata da un numero arbitrario di spazi (' '), andate a capo ('\\n') e due punti (':').\n    Le chiavi del dizionario sono seguite da sempre dai ':' e poi dagli elementi della lista attributo.\n    ESEMPI:\n    se il file contiene il testo\n    '' \n    3 : 3 6 9\n    2: 4 6 10\n    ''\n    la funzione restituira' il dizionario { 3: [3,6,9], 2: [4,6,10]}\n    Se il file contiene \n    ''     4: 5 6: 7        8 \n    9 10 11:12 13:14 \n    15'' \n    la funzione restituira' il dizionario {4:[5], 6:[7,8,9,10], 11:[12], 13:[14,15]}\n    ",
+    "algorithm": "Apri il file e salva il testo in una variabile testo\ndividi il testo in una lista lst, usando come divisore ':'\nper ogni elemento lst:\n\ttrasforma la stringa in una lista di interi\ninizializzare una nuova lista lista1\nper i che va da 1 a la lunghezza di lst -1\n\tinserisci in lista1 l'elemento di lst[i-1] in ultima posizione + gli elementi di lst[i] meno l'ultimo elemnto, i nuovo elemnto di lista1 sarà una lista di interi del tipo [1,2,3,4] corrispondente all'elemnto del disionario {1:[2,3,4]}\ninizializza un dizionario\nper ogni lista in lista1:\n\tinserisco nel dizionario una coppia chiave-valore del tipo elemnto[0]:[elemnto[1:]\nritorno il dizionario",
+    "tags": ["File", "Dizionari"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-19-9-18"
+}

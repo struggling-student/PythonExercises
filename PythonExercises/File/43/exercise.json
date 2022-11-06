@@ -1,0 +1,10 @@
+{
+    "id": 43,
+    "description": "Dato in input un file di testo contenete degli interi, ritorna una lista di interi che sono la somma degli interi nel file",
+    "text": "\n    Si progetti la funzione es43(ftesto) che, preso in input l'indirizzo di un file di testo\n    contenente righe contenenti interi separati da spazi, restituisce una lista  di interi.\n    La lunghezza della lista e' data dal numero massimo di interi che compaiono nelle righe\n    del file. E nella generica posizione i della lista c'e' l'intero corrispondente alla somma di tutti\n    gli interi presenti in posizione  i  nelle varie righe che contengono almeno i interi.\n    Ad esempio per il file contenente le  3 righe:\n    ' 0 2  4\n      6 8 10\n      4 0  1'\n    la funzione restituisce la lista [10,10,15] cioe' le somme in colonna\n    Per il file contenente le  4 righe (nota, di lunghezza diversa):\n    ' 1 2 3\n      4 5 6 7 3 6\n      1\n      1 2'\n    la funzione restituisce la lista [7,9,9,7,3,6] cioe' le somme in colonna\n    ",
+    "algorithm": "Inizializza una lista vuota\napri il file di testo:\n\tper ogni riga\n\t\tprendi la lista degli interi\n\t\tper ogni indice dell'intero, intero della lista:\n\t\t\tse l'indice è minore della lunghezza della lista:\n\t\t\t\tsomma l'intero al volore presente nella lista\n\t\t\taltrimenti:\n\t\t\t\taggiungi l'inero in fondo alla lista\nritorna la lista",
+    "tags": ["File"],
+    "effort": 3,
+    "clues": [],
+    "from": "recupero-19-6-18"
+}

@@ -1,0 +1,10 @@
+{
+    "id": 78,
+    "description": "Data una stringa di caratteri, ritorna la lista delle 'sottostringhe crescenti', facendo uso di una funzione ricorsiva.",
+    "text": "\n        \n    Si definisca la funzione ricorsiva (o che usa una vostra funzione ricorsiva)  \n    es78(parola), che presa in input una stringa di caratteri  parola restituisce la lista delle  \n    diverse \"sottoparole crescenti\"  di parola. Le sottoparole devono comparire nella lista in ordine lessicografico.\n    Si ricorda che una sottoparola e' quello che si ottiene da una parola concellandone 0 o piu'\n    caratteri (in testa, in coda o nel mezzo).\n    Inoltre una sottoparola si dice crescente se i caratteri che la compongono\n    letti da sinistra  a destra risultano ordinati lessicograficamente.\n    \n    Ad esempio  la lista restituita da es78('zanzara') sara'\n    ['a', 'aa', 'aaa', 'aar', 'an', 'anr', 'anz', 'ar', 'az', 'n', 'nr', 'nz', 'r', 'z', 'zz']\n    ",
+    "algorithm": "es78(parola):\n\tse la parola è lunga 1:\n\t\tritorna la lista con elemento aprola\n\timposta a al primo carattere di parola\n\tsalva in lista la chiamata di es78(..) su parola meno il primo carattere\n\tcopia la lista in una nuova lista1\n\tse a non è presente nella lista1:\n\t\taggiungi a\n\tper ogni elemento in lista:\n\t\tse a è minore o uguale al primo carattere dell'elemento e se la stringa a+elemnto non è nella lista1:\n\t\t\taggiungi un nuovo elemento a+y a lista1\n\tritorna la lista1 ordinata",
+    "tags": ["Stringhe", "Ricorsione", "Ordinamento"],
+    "effort": 5,
+    "clues": [],
+    "from": "esame-18-4-18"
+}

@@ -1,0 +1,30 @@
+{
+    "t4": {
+        "u3": {
+            "v4": {
+                "w1": {
+                    "looney-tunes.txt": 51
+                }
+            },
+            "v1": {
+                "minnie.txt": 0
+            }
+        },
+        "u1": {
+            "looney-tunes.txt": 51,
+            "v3": {
+                "w4": {
+                    "x3": {
+                        "minnie.txt": 0
+                    }
+                }
+            }
+        },
+        "u2": {
+            "minnie.txt": 0,
+            "v3": {
+                "looney-tunes.txt": 51
+            }
+        }
+    }
+}

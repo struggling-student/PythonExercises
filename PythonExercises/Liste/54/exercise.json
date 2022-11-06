@@ -1,0 +1,10 @@
+{
+    "id": 54,
+    "description": "Data in input una lista di interi e stringhe, cancella dalla lista le stringhe e ritorna un dizionario con chiavi le stringhe cancellate.",
+    "text": " \n    la funzione es1(lista) che presa in input una lista contenente interi e stringhe, modifica \n    la lista distruttivamente e restituisce un dizionario.\n    Al termine della funzione dalla lista devono risultare  cancellate tutte le stringhe e il dizionario \n    restituito deve contenere come chiavi le stringhe cancellate ciascuna con attributo il numero di volte \n    in cui occorrevano nella lista.\n    Ad esempio per lista=[1,'a',2,'b','a',8,'d',8] la funzione al termine restituisce il dizionario \n    {'a':2,'b':1,'d':1} e la lista diviene [1,2,8,8]\n    ",
+    "algorithm": "Inizializza un dizionario diz\nper ogni elemento della copia della lista\n\tse l'elemento è una stringa\n\t\trimuovi l'elemento dalla lista\n\t\taggiorna il counter nel dizionario\nritorna il dizionario",
+    "tags": ["Dizionari", "Liste"],
+    "effort": 2,
+    "clues": [],
+    "from": "recupero-23-1-18"
+}

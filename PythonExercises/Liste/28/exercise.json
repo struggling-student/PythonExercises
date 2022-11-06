@@ -1,0 +1,10 @@
+{
+    "id": 28,
+    "description": "Dati una tabella, il nome di una colonna, e un valore, ritorna la tabella senza la colonna indicata e senza le righe con valore diverso da quello indicato.",
+    "text": "\n    Si implementi la funzione es28(tabella, colonna, valore) che presi in input\n    - una tabella rappresentata tramite lista di dizionari\n    - una stringa con il nome di una delle colonne della tabella\n    - un valore\n    restituisce la  sottotabella che si ottiene eliminando dalla tabella la colonna indicata e\n    le righe che in quella colonna avevano valori diversi da valore.\n    La tabella originaria non deve essere modificata e nella nuova tabella le righe devono conservare il vecchio ordinamento.\n    Ad esempio con  tabella = [{'nome': 'Sofia', 'anno': 1973 ,'tel': 5553546},{'nome': 'Bruno', 'anno': 1981 ,'tel': 5558432}]\n    al termine di es28(dati, 'anno', 1981) verra' restituita la tabella\n    [{'nome': 'Bruno','tel': 5558432}]\n    ",
+    "algorithm": "Costruisci una  nuova tabella:\n\togni riga deve avere valore uguale a quello in input\n\tin ogni riga bisogna eliminara la colonna data in input\nritorna la nuova tabella",
+    "tags": ["Liste", "Dizionari"],
+    "effort": 2,
+    "clues": [],
+    "from": "recupero-15-2-18"
+}

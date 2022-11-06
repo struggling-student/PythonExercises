@@ -1,0 +1,10 @@
+{
+    "id": 35,
+    "description": "Dati un path a una directory e un insieme di parole, ritorna un dizionario delle parole contenute nei file .txt all'interno della directory",
+    "text": "\n    Si definisca la funzione  es1(dir1, parole), che presi in input:\n        dir1:   il path di una directory\n        parole: un insieme di parole (stringhe di caratteri tra 'a' e 'z')\n    esegue il seguente lavoro:\n    Ricerca solo nella directory il cui path e'  dir1  (e non nelle sottodirectories) eventuali file con estensione .txt contenenti\n    stringhe appartenenti all'insieme delle parole e restituisce un dizionario delle parole trovate.\n    Nel dizionario restituito devono comparire  solo le parole effettivamente riscontrate all'interno\n    dei file con estensione .txt presenti in dir1 e ciascuna chiave deve avere  come attributo una tupla  di due interi.\n    Il primo elemento della tupla riporta il numero complessivo di volte che la parola  e' stata ritrovata in questi file in dir1,\n    il secondo elemento della tupla riporta il numero di diversi file di dir1 in cui la parola e' risultata presente.\n    Per parola intendiamo una sequenza di lunghezza massimale di caratteri tra 'a' e 'z'. \n    Si puo' assumere che tutti i file con estensione .txt contengono solo parole  separate da  spazi, tab o andate a capo.\n    (non sono presenti caratteri maiuscoli o segni di interpunzione)\n    \"\"\"\n    # inserite qui il vostro codice\n\n\n",
+    "algorithm": "Inizialiazza il dizionario con le parole da cercare e i contatori a 0\nper ogni file .txt nella directory:\n\testraggo le parole del testo\n\tper ogni parola\n\t\tse è una parola dell'insieme:\n\t\t\taggiorno il counter nel dizionario\n\tper ogni parola dell'insieme:\n\t\tse è nelle parole del testo:\n\t\t\taggiorno il counter per il numero di files nel dizionario\nritorno un dizionario con le sole parole cercate che sono state trovate in qualche file.",
+    "tags": ["File", "Ricerca File", "Dizionari"],
+    "effort": 4,
+    "clues": [],
+    "from": "recuper-16-3-18"
+}

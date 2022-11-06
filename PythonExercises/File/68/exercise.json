@@ -1,0 +1,10 @@
+{
+    "id": 68,
+    "description": "Dati un path ad una directory e una lista di estensioni, la funzione, ricorsivamente, cerca nella directory e nelle sue sotto-directory i file con le estensioni della lista, ritorna un dizionario con chiavi le estensioni e valore il numero di file trovati.",
+    "text": "Si definisca la funzione ricorsiva (o che usa una vostra funzione ricorsiva) es1(dir, estensioni),\n    che deve contare quanti file di certi tipi si trovano in una directory o in una delle sue sottodirectories,\n    e che riceve come argomenti\n        dir: il path della directory in cui cercare\n        estensioni: una lista di stringhe \"estensioni\" (le ultime lettere del nome dei files che cerchiamo)\n    La funzione deve tornare un dizionario che ha come chiavi le estensioni passate come argomento\n    e come valori il numero di file il cui nome termina in quel modo, solo se > 0\n    (ovvero, se nessun file con una data estensione appare nella directory o nelle sottodirectories\n    la chiave non deve apparire nel dizionario tornato dalla funzione).\n\n    Tests: date alcune directory contenenti file di tipo (ext) diverso, si chiama la funzione per contare alcuni dei tipi di file nelle diverse directory\n    Test: che la funzione sia ricorsiva\n",
+    "algorithm": "Inizializza un dizionario count con chivi le estensioni e valore 0\nper ogni file nella directory:\n\tcrea il path del file\n\tse il file è una directory:\n\t\tchiamare la funzione es68(..) su quella funzione e salvare il risultato tornato in una variabile diz\n\t\tper ogni chiave-valore di diz:\n\t\t\taggiornare i valori del dizionario count\n\taltrimenti:\n\t\tper ogni estensionedella lista:\n\t\t\tse il file termina con l'estensione:\n\t\t\t\taggiorna il dizionario per quella estensione\nper ogni chiave del dizionario:\n\tse il valore per la chiave è 0:\n\t\telimina la chiave dal dizionario\nritorna il dizionario count",
+    "tags": ["Ricerca File", "Ricorsione"],
+    "effort": 2,
+    "clues": [],
+    "from": "esame-15-2-18"
+}

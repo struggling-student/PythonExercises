@@ -1,0 +1,10 @@
+{
+    "id": 44,
+    "description": "Dati in input due interi a e b, ritorna l'insieme dei primi a interi che hanno esattamente b divisori.",
+    "text": "\n    Si progetti la funzione es9(a,b) che,  in input due interi a e b restituisce l'insieme dei primi\n    a interi che hanno esattamente b divisori.\n    Ad esempio per a=20 e b=2 la funzione deve restituire l'insieme dei primi 20 numeri primi\n    (perche' solo i numeri primi hanno esattamente 2 divisori), vale a dire:\n    {2, 3, 67, 5, 37, 7, 71, 41, 11, 43, 13, 47, 17, 19, 61, 53, 23, 59, 29, 31}\n    ",
+    "algorithm": "Inizializza un insieme vuoto e unintero n a 2\nfinchè la lunghezza dell'insieme è minore di a:\n\tinizializza il numero di divisori a 0\n\tper ogni intero tra 1 e n+1:\n\t\tse n % l'intero è zero:\n\t\t\tincrementa il numero di divisori\n\t\tse il numero di divisori è maggiore di b:\n\t\t\tteermina il ciclo for\n\tse il numero di divisori è diverso da b:\n\t\tincrementa n\n\t\tcontinua con la prossima iterazione\n\taltrimenti\n\t\taggiungi all'insieme degli interi n\n\tincrementa n\nritorna l'insieme di interi",
+    "tags": ["Insiemi"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-19-6-18"
+}

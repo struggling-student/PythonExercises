@@ -1,0 +1,10 @@
+{
+    "id": 34,
+    "description": "Dati due path a file json, il primo file contiene un quadrato latino incompleto sotto forma di lista di liste, completare il quadrato latino e salvarlo nel secondo file json, ritorna l'insieme di simboli che compaiono nel quadrato",
+    "text": "\n    Un quadrato latino e' una scacchiera quadrata di lato N con un simbolo (scelto in un insieme di N elementi)\n    su ogni casella in modo che ognuno dei simboli compaia una e una sola volta in ogni riga e in ogni colonna.\n    Implementate la funzione es34(fname1,fname2) che prende in input l'indirizzo fname1 di un file json in cui e'\n    contenuto un quadrato latino privato dell'ultima riga e dell'ultima colonna. \n    La scacchiera e' rappresentata come lista di liste. Bisogna completare il quadrato latino e \n    registrarlo come file json all'indirizzo fname2. \n    La funzione deve poi restituire l'insieme dei simboli che compaiono nel quadrato latino.\n    Ad esempio: se la lista di liste in fname1 con il quadrato latino parziale e'\n    [['X','1'],['?','X']] allora, l'insieme  con i simboli del quadrato latino sara' \n    {'X','1','?'} e la lista di liste in fname2 con il quadrato latino completo sara' \n    [['X','1','?'],['?','X','1'],['1','?','X']]\n    Nota: assumete che sia sempre N>2\n    ",
+    "algorithm": "Inizializza una lista vuota\nsalva il quadrato nel file 1 nella lista\nricava l'insieme dei simboli del quadrato\nsalva il numero di simboli dell'insieme\nper ogni riga del quadrato:\n\taggiungi in fondo il simbolo mancante\ninizializza una lista vuota per l'ultima riga\nper ogni colonna\n\taggiungo in fondo alla colonna il simbolo mancante\naggiungo la riga al quadrato\nsalvo il quadrato nel secondo file\nritorno l'insieme dei simboli",
+    "tags": ["Matrici", "File", "Json"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-15-2-18"
+}

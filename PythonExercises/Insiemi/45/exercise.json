@@ -1,0 +1,10 @@
+{
+    "id": 45,
+    "description": "Prese in input due stringhe di caratteri, restituisce la lista delle sottostringhe comuni ad entrambe le stringhe",
+    "text": "\n    progettare la funzione es12(parola1,parola2) che\n    prende in input due  stringhe di caratteri parola1 e parola2, e restituisce la lista delle\n    sottostringhe che risultano in comune ad entrambe le parole.\n    La lista delle sottostringhe comuni deve essere ordinata lessicograficamente e non deve contenere duplicati.\n    Si ricorda che una sottostringa e' quello che si ottiene da una stringa\n    eliminando 0 o piu' caratteri all'inizio e 0 o piu' caratteri alla fine\n\n    Ad esempio:\n    con  parola1='aabbccdd' parola2='acccdzza' la funzione restituisce la lista [a,c,cc,ccd,cd,d]\n    ",
+    "algorithm": "Inizializza due insiemi per le sottostringhe\nper i che va da 0 alla lunghezza della prima stringa:\n\tper j che va da i alla lunghezza della prima stringa:\n\t\taggiugni al primo insieme la sottostringa che va da i a j+1 della prima stringa\nugualmente calcola le sottostringhe della seconda stringa\nritorna la ordinata del'intersezione del primo insieme di sottostringhe con il secondo",
+    "tags": ["Stringhe", "Insiemi", "Ordinamento"],
+    "effort": 6,
+    "clues": [],
+    "from": "recupero-19-6-18"
+}

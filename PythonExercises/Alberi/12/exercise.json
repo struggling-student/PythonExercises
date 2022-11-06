@@ -1,0 +1,10 @@
+{
+    "id": 12, 
+    "description": "Dato un intero k, si costruisce un albero binario completo di altezza k, le foglie con valore da 1 a 2^k e i nodi interni con valore la somma dei due figli", 
+    "text": "\n    Es 11: 3 punti\n    Un albero si dice binario completo se tutti i suoi nodi interni hanno esattamente 2 \n    figli e tutte le foglie si trovano allo stesso livello.\n    Si definisca la funzione es11(k ) ricorsiva (o che fa uso di funzioni o \n    metodi ricorsive/i) che:\n    - riceve come argomenti  un intero k \n    - costruisce un albero binario completo di altezza k composta da nodi del tipo  \n      Nodo definito nella libreria albero.py allegata. Gli identificatore delle foglie, \n      letti da sinistra a destra sono i 2^k-interi che vanno da 1 a 2^k (nota che \n      un albero binario completo di altezza k ha sempre 2^k foglie). Gli identificatori \n      dei nodi interni sono dati dalla somma degli identificatori dei due loro figli. \n    - torna come risultato la radice dell'albero costruito. \n    Esempio: \n    - es11(2)  crea e restituisce l'albero a sinistra \n    - es11(3) crea e restituisce l'albero a destra\n\n\n                    10                                  36               \n             _______|______                      _______|______         \n            |              |                    |              |        \n            3              7                   10             26        \n         ___|___        ___|__               ___|___        ___|__      \n        |       |      |      |             |       |      |      |     \n        1       2      3      4             3       7     11     15     \n                                           _|_     _|_    _|_    _|_    \n                                          |   |   |   |  |   |  |   |   \n                                          1   2   3   4  5   6  7   8   \n                                                                   \n    ", 
+    "algorithm": "", 
+    "tags": ["Ricorsione", "Alberi"], 
+    "effort": 3,
+    "clues": [],
+    "from":"esame-8-1-19"
+}
