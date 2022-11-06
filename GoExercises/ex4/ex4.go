@@ -5,12 +5,13 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"time"
 )
 
 type Stations struct {
 	Linea         string    `json:"line"`
 	Stations      []Station `json:"stations"`
-	DepartingTime string    `json:"departingTime"`
+	DepartingTime time.Time `json:"departingTime"`
 }
 
 type Station struct {
@@ -18,6 +19,12 @@ type Station struct {
 	Distance int    `json:"distance"`
 	ETA      int    `json:"ETA-from-previous-station"`
 	Platform int    `json:"platform"`
+}
+
+type Response struct {
+	TotalDistance int       `json:"totalDistance"`
+	TravelTime    int       `json:"travelTime"`
+	ArrivalTime   time.Time `json:"arrivalTime"`
 }
 
 func main() {
@@ -34,15 +41,19 @@ func main() {
 
 	json.Unmarshal(byteRead, &stations)
 
-	fmt.Printf("%+v\n", stations)
 	totalDistance := 0
 	travelTime := 0
-
 	for i := 0; i < len(stations.Stations); i++ {
 		totalDistance += stations.Stations[i].Distance
 		travelTime += stations.Stations[i].ETA
 	}
-	fmt.Println(totalDistance)
-	fmt.Println(travelTime)
-}
+	arrival := time.Date(stations.DepartingTime.Year(), stations.DepartingTime.Month(), stations.DepartingTime.Day(), stations.DepartingTime.Hour(), travelTime, stations.DepartingTime.Second(), 0, time.Local)
+	var response Response
 
+	response.TotalDistance = totalDistance
+	response.TravelTime = travelTime
+	response.ArrivalTime = arrival
+
+	file, _ := json.MarshalIndent(response, "", " ")
+	_ = ioutil.WriteFile("test.json", file, 0644)
+}
