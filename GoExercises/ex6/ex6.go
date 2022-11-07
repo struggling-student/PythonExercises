@@ -27,7 +27,7 @@ type Response struct {
 	ArrivalTime   time.Time `json:"arrivalTime"`
 }
 
-func calcolo(w http.ResponseWriter, r *http.Request) {
+func process(w http.ResponseWriter, r *http.Request) {
 
 	var stations Stations
 
@@ -58,8 +58,10 @@ func calcolo(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", calcolo)
+	http.HandleFunc("/", process)
 
 	fmt.Println("Starting web server")
 	http.ListenAndServe(":8090", nil)
 }
+
+// USE curl -X POST -H "Content-Type: application/json" -d @PATH_OF_JSON_FILE http://localhost:8090/process
