@@ -1,0 +1,22 @@
+digraph G
+{
+	rankdir=RL
+	Carlo
+	Lucia
+	Aurora
+	Giovanni
+	Ciro [color=red]
+	Federica
+
+	Carlo -> Lucia [color=green]
+	Lucia -> Carlo [color=green]
+
+	Aurora -> Lucia
+	Aurora -> Carlo
+
+	Ciro -> Aurora
+	Ciro -> Giovanni
+
+	Federica -> Giovanni
+	Federica -> Aurora
+}

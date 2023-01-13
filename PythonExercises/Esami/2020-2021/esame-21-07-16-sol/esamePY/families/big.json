@@ -1,0 +1,452 @@
+{
+    "Cari": {
+        "alive": true,
+        "parents": [],
+        "spouse": null
+    },
+    "Georgiana": {
+        "alive": true,
+        "parents": [],
+        "spouse": "Elana"
+    },
+    "Juana": {
+        "alive": true,
+        "parents": [],
+        "spouse": "Robbyn"
+    },
+    "Miquel": {
+        "alive": false,
+        "parents": [],
+        "spouse": "Annamaria"
+    },
+    "Jacelyn": {
+        "alive": false,
+        "parents": [],
+        "spouse": "Jacelyn"
+    },
+    "Cassidy": {
+        "alive": true,
+        "parents": [],
+        "spouse": null
+    },
+    "Tessie": {
+        "alive": true,
+        "parents": [],
+        "spouse": "Tessie"
+    },
+    "Cory": {
+        "alive": false,
+        "parents": [],
+        "spouse": "Desmond"
+    },
+    "Desmond": {
+        "alive": true,
+        "parents": [],
+        "spouse": "Cory"
+    },
+    "Magdalen": {
+        "alive": false,
+        "parents": [],
+        "spouse": null
+    },
+    "Britni": {
+        "alive": false,
+        "parents": [
+            "Cassidy",
+            "Cari"
+        ],
+        "spouse": null
+    },
+    "Buena": {
+        "alive": true,
+        "parents": [
+            "Britni",
+            "Juana"
+        ],
+        "spouse": null
+    },
+    "Scottie": {
+        "alive": true,
+        "parents": [
+            "Juana",
+            "Buena"
+        ],
+        "spouse": null
+    },
+    "Elana": {
+        "alive": false,
+        "parents": [
+            "Desmond",
+            "Juana"
+        ],
+        "spouse": "Georgiana"
+    },
+    "Noah": {
+        "alive": false,
+        "parents": [
+            "Georgiana",
+            "Magdalen"
+        ],
+        "spouse": "Isabell"
+    },
+    "Shantel": {
+        "alive": false,
+        "parents": [
+            "Magdalen",
+            "Desmond"
+        ],
+        "spouse": null
+    },
+    "Janella": {
+        "alive": true,
+        "parents": [
+            "Cassidy",
+            "Elana"
+        ],
+        "spouse": null
+    },
+    "Annamaria": {
+        "alive": false,
+        "parents": [
+            "Cory",
+            "Janella"
+        ],
+        "spouse": "Miquel"
+    },
+    "Isabell": {
+        "alive": true,
+        "parents": [
+            "Tessie",
+            "Cari"
+        ],
+        "spouse": "Noah"
+    },
+    "Kurt": {
+        "alive": false,
+        "parents": [
+            "Scottie",
+            "Cassidy"
+        ],
+        "spouse": "Julietta"
+    },
+    "Enoch": {
+        "alive": false,
+        "parents": [
+            "Cari",
+            "Magdalen"
+        ],
+        "spouse": "Windy"
+    },
+    "Polly": {
+        "alive": false,
+        "parents": [
+            "Britni",
+            "Isabell"
+        ],
+        "spouse": null
+    },
+    "Tyron": {
+        "alive": true,
+        "parents": [
+            "Shantel",
+            "Britni"
+        ],
+        "spouse": null
+    },
+    "Julietta": {
+        "alive": true,
+        "parents": [
+            "Polly",
+            "Scottie"
+        ],
+        "spouse": "Kurt"
+    },
+    "Jesenia": {
+        "alive": false,
+        "parents": [
+            "Janella",
+            "Desmond"
+        ],
+        "spouse": null
+    },
+    "Tiffany": {
+        "alive": false,
+        "parents": [
+            "Jesenia",
+            "Polly"
+        ],
+        "spouse": "Pia"
+    },
+    "Willa": {
+        "alive": true,
+        "parents": [
+            "Noah",
+            "Buena"
+        ],
+        "spouse": null
+    },
+    "Nam": {
+        "alive": false,
+        "parents": [
+            "Jesenia",
+            "Tessie"
+        ],
+        "spouse": "Candis"
+    },
+    "Lashunda": {
+        "alive": false,
+        "parents": [
+            "Tyron",
+            "Scottie"
+        ],
+        "spouse": null
+    },
+    "Pia": {
+        "alive": true,
+        "parents": [
+            "Willa",
+            "Lashunda"
+        ],
+        "spouse": "Tiffany"
+    },
+    "Eden": {
+        "alive": false,
+        "parents": [
+            "Jacelyn",
+            "Isabell"
+        ],
+        "spouse": null
+    },
+    "Maire": {
+        "alive": false,
+        "parents": [
+            "Tiffany",
+            "Georgiana"
+        ],
+        "spouse": "Greta"
+    },
+    "Latrina": {
+        "alive": false,
+        "parents": [
+            "Magdalen",
+            "Noah"
+        ],
+        "spouse": "Chrissy"
+    },
+    "Greta": {
+        "alive": false,
+        "parents": [
+            "Eden",
+            "Tyron"
+        ],
+        "spouse": "Maire"
+    },
+    "Brian": {
+        "alive": false,
+        "parents": [
+            "Georgiana",
+            "Elana"
+        ],
+        "spouse": null
+    },
+    "Shalon": {
+        "alive": false,
+        "parents": [
+            "Greta",
+            "Eden"
+        ],
+        "spouse": "Nicolas"
+    },
+    "Darell": {
+        "alive": true,
+        "parents": [
+            "Brian",
+            "Jacelyn"
+        ],
+        "spouse": "Queen"
+    },
+    "Kristie": {
+        "alive": true,
+        "parents": [
+            "Scottie",
+            "Juana"
+        ],
+        "spouse": "Marlyn"
+    },
+    "Brande": {
+        "alive": true,
+        "parents": [
+            "Buena",
+            "Jesenia"
+        ],
+        "spouse": null
+    },
+    "Sherrie": {
+        "alive": true,
+        "parents": [
+            "Annamaria",
+            "Desmond"
+        ],
+        "spouse": null
+    },
+    "Melodie": {
+        "alive": true,
+        "parents": [
+            "Brian",
+            "Tessie"
+        ],
+        "spouse": null
+    },
+    "Harold": {
+        "alive": true,
+        "parents": [
+            "Sherrie",
+            "Melodie"
+        ],
+        "spouse": null
+    },
+    "Suzie": {
+        "alive": true,
+        "parents": [
+            "Brande",
+            "Janella"
+        ],
+        "spouse": null
+    },
+    "Windy": {
+        "alive": true,
+        "parents": [
+            "Tiffany",
+            "Elana"
+        ],
+        "spouse": "Enoch"
+    },
+    "Chrissy": {
+        "alive": false,
+        "parents": [
+            "Desmond",
+            "Sherrie"
+        ],
+        "spouse": "Latrina"
+    },
+    "Gerda": {
+        "alive": true,
+        "parents": [
+            "Pia",
+            "Suzie"
+        ],
+        "spouse": null
+    },
+    "Queen": {
+        "alive": true,
+        "parents": [
+            "Chrissy",
+            "Suzie"
+        ],
+        "spouse": "Darell"
+    },
+    "Robbyn": {
+        "alive": true,
+        "parents": [
+            "Cassidy",
+            "Tessie"
+        ],
+        "spouse": "Juana"
+    },
+    "Candis": {
+        "alive": false,
+        "parents": [
+            "Scottie",
+            "Georgiana"
+        ],
+        "spouse": "Nam"
+    },
+    "Bibi": {
+        "alive": false,
+        "parents": [
+            "Kurt",
+            "Juana"
+        ],
+        "spouse": null
+    },
+    "Marlyn": {
+        "alive": false,
+        "parents": [
+            "Maire",
+            "Isabell"
+        ],
+        "spouse": "Kristie"
+    },
+    "Patrice": {
+        "alive": false,
+        "parents": [
+            "Isabell",
+            "Georgiana"
+        ],
+        "spouse": null
+    },
+    "Geoffrey": {
+        "alive": false,
+        "parents": [
+            "Desmond",
+            "Marlyn"
+        ],
+        "spouse": null
+    },
+    "Gidget": {
+        "alive": false,
+        "parents": [
+            "Miquel",
+            "Willa"
+        ],
+        "spouse": null
+    },
+    "Jeniffer": {
+        "alive": false,
+        "parents": [
+            "Brian",
+            "Suzie"
+        ],
+        "spouse": null
+    },
+    "Abby": {
+        "alive": false,
+        "parents": [
+            "Maire",
+            "Isabell"
+        ],
+        "spouse": null
+    },
+    "Rueben": {
+        "alive": false,
+        "parents": [
+            "Polly",
+            "Magdalen"
+        ],
+        "spouse": "Farah"
+    },
+    "Farah": {
+        "alive": false,
+        "parents": [
+            "Shantel",
+            "Juana"
+        ],
+        "spouse": "Rueben"
+    },
+    "Kassie": {
+        "alive": true,
+        "parents": [
+            "Cory",
+            "Queen"
+        ],
+        "spouse": null
+    },
+    "Nicolas": {
+        "alive": true,
+        "parents": [
+            "Juana",
+            "Annamaria"
+        ],
+        "spouse": "Shalon"
+    }
+}

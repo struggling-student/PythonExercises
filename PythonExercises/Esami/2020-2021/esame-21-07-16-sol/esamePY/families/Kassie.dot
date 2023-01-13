@@ -1,0 +1,52 @@
+digraph G {rankdir=RL
+Kassie	[label="\N:0"]
+Queen	[label="\N:1"]
+Cory	[label="\N:1"]
+Chrissy	[label="\N:2"]
+Suzie	[label="\N:2"]
+
+Desmond	[label="\N:3"]
+Sherrie	[label="\N:3"]
+Brande	[label="\N:3"]
+Janella	[label="\N:3"]
+
+Buena	[label="\N:4"]
+Jesenia	[label="\N:4"]
+Cassidy	[label="\N:4"]
+Elana	[label="\N:4"]
+Annamaria	[label="\N:4"]
+
+Britni	[label="\N:5"]
+Juana	[label="\N:5"]
+Juana	[label="\N:5"]
+
+Cari	[label="\N:6"]
+
+Kassie -> Queen
+Kassie -> Cory
+
+Queen -> Chrissy
+Queen -> Suzie
+
+Chrissy -> Desmond
+Chrissy -> Sherrie
+Suzie -> Brande
+Suzie -> Janella
+
+Brande -> Buena
+Brande -> Jesenia
+Janella -> Cassidy
+Janella -> Elana
+Sherrie -> Annamaria
+Sherrie -> Desmond
+
+Buena -> Britni
+Buena -> Juana
+Elana -> Desmond
+Elana -> Juana
+Annamaria -> Cory
+Annamaria -> Janella
+
+Britni -> Cassidy
+Britni -> Cari
+}

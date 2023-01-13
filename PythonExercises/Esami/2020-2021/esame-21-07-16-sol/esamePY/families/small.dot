@@ -1,0 +1,48 @@
+digraph G {rankdir=RL
+Tiny [color=red]
+Tiny -> Marcos [color=green]
+Marcos [color=red]
+Marcos -> Tiny [color=green]
+Mickey [color=red]
+Brian
+Coreen [color=red]
+Coreen -> Rocky [color=green]
+Jeana
+Emanuel
+Jerold
+Rocky
+Rocky -> Coreen [color=green]
+Pedro [color=red]
+Zenia
+Zenia -> Jerold
+Zenia -> Mickey
+Kacie [color=red]
+Kacie -> Zenia
+Kacie -> Jerold
+Douglass
+Douglass -> Tiny
+Douglass -> Kacie
+Douglass -> Jaunita [color=green]
+Ricardo
+Ricardo -> Rocky
+Ricardo -> Tiny
+Jaunita [color=red]
+Jaunita -> Marcos
+Jaunita -> Emanuel
+Jaunita -> Douglass [color=green]
+Cleora
+Cleora -> Jeana
+Cleora -> Ricardo
+Talia
+Talia -> Tiny
+Talia -> Marcos
+Jesenia [color=red]
+Jesenia -> Zenia
+Jesenia -> Jerold
+Lakisha [color=red]
+Lakisha -> Jaunita
+Lakisha -> Mickey
+Galina
+Galina -> Tiny
+Galina -> Marcos
+}

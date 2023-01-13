@@ -1,0 +1,6 @@
+name	surname	birthday	telephone	city
+str	str	date	int	str
+Tommy	Rossi	2/1/2005	344556677	Parigi
+Carolina	Rossi	2/1/2005	371928374	Parigi
+Gianni	Rossi	17/2/1987	345678901	Roma
+Francesca	Bianchi	12/11/1999	321098765	Milano

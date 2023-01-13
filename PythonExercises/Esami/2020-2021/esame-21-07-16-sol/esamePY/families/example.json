@@ -1,0 +1,47 @@
+{
+    "Carlo": {
+        "name": "Carlo",
+        "parents": [],
+        "spouse": "Lucia",
+        "alive": true
+    },
+    "Lucia": {
+        "name": "Lucia",
+        "parents": [],
+        "spouse": "Carlo",
+        "alive": true
+    },
+    "Aurora": {
+        "name": "Aurora",
+        "parents": [
+            "Lucia",
+            "Carlo"
+        ],
+        "spouse": null,
+        "alive": true
+    },
+    "Giovanni": {
+        "name": "Giovanni",
+        "parents": [],
+        "spouse": null,
+        "alive": true
+    },
+    "Ciro": {
+        "name": "Ciro",
+        "parents": [
+            "Aurora",
+            "Giovanni"
+        ],
+        "spouse": null,
+        "alive": false
+    },
+    "Federica": {
+        "name": "Federica",
+        "parents": [
+            "Giovanni",
+            "Aurora"
+        ],
+        "spouse": null,
+        "alive": true
+    }
+}

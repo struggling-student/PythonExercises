@@ -1,0 +1,194 @@
+digraph G {rankdir=RL
+Cari
+Georgiana
+Georgiana -> Elana [color=green]
+Juana
+Miquel [color=red]
+Miquel -> Annamaria [color=green]
+Jacelyn [color=red]
+Jacelyn -> Jacelyn [color=green]
+Cassidy
+Tessie
+Tessie -> Tessie [color=green]
+Cory [color=red]
+Cory -> Desmond [color=green]
+Desmond
+Desmond -> Cory [color=green]
+Magdalen [color=red]
+Britni [color=red]
+Britni -> Cassidy
+Britni -> Cari
+Buena
+Buena -> Britni
+Buena -> Juana
+Scottie
+Scottie -> Juana
+Scottie -> Buena
+Elana [color=red]
+Elana -> Desmond
+Elana -> Juana
+Elana -> Georgiana [color=green]
+Noah [color=red]
+Noah -> Georgiana
+Noah -> Magdalen
+Noah -> Isabell [color=green]
+Shantel [color=red]
+Shantel -> Magdalen
+Shantel -> Desmond
+Janella
+Janella -> Cassidy
+Janella -> Elana
+Annamaria [color=red]
+Annamaria -> Cory
+Annamaria -> Janella
+Annamaria -> Miquel [color=green]
+Isabell
+Isabell -> Tessie
+Isabell -> Cari
+Isabell -> Noah [color=green]
+Kurt [color=red]
+Kurt -> Scottie
+Kurt -> Cassidy
+Kurt -> Julietta [color=green]
+Enoch [color=red]
+Enoch -> Cari
+Enoch -> Magdalen
+Enoch -> Windy [color=green]
+Polly [color=red]
+Polly -> Britni
+Polly -> Isabell
+Tyron
+Tyron -> Shantel
+Tyron -> Britni
+Julietta
+Julietta -> Polly
+Julietta -> Scottie
+Julietta -> Kurt [color=green]
+Jesenia [color=red]
+Jesenia -> Janella
+Jesenia -> Desmond
+Tiffany [color=red]
+Tiffany -> Jesenia
+Tiffany -> Polly
+Tiffany -> Pia [color=green]
+Willa
+Willa -> Noah
+Willa -> Buena
+Nam [color=red]
+Nam -> Jesenia
+Nam -> Tessie
+Nam -> Candis [color=green]
+Lashunda [color=red]
+Lashunda -> Tyron
+Lashunda -> Scottie
+Pia
+Pia -> Willa
+Pia -> Lashunda
+Pia -> Tiffany [color=green]
+Eden [color=red]
+Eden -> Jacelyn
+Eden -> Isabell
+Maire [color=red]
+Maire -> Tiffany
+Maire -> Georgiana
+Maire -> Greta [color=green]
+Latrina [color=red]
+Latrina -> Magdalen
+Latrina -> Noah
+Latrina -> Chrissy [color=green]
+Greta [color=red]
+Greta -> Eden
+Greta -> Tyron
+Greta -> Maire [color=green]
+Brian [color=red]
+Brian -> Georgiana
+Brian -> Elana
+Shalon [color=red]
+Shalon -> Greta
+Shalon -> Eden
+Shalon -> Nicolas [color=green]
+Darell
+Darell -> Brian
+Darell -> Jacelyn
+Darell -> Queen [color=green]
+Kristie
+Kristie -> Scottie
+Kristie -> Juana
+Kristie -> Marlyn [color=green]
+Brande
+Brande -> Buena
+Brande -> Jesenia
+Sherrie
+Sherrie -> Annamaria
+Sherrie -> Desmond
+Melodie
+Melodie -> Brian
+Melodie -> Tessie
+Harold
+Harold -> Sherrie
+Harold -> Melodie
+Suzie
+Suzie -> Brande
+Suzie -> Janella
+Windy
+Windy -> Tiffany
+Windy -> Elana
+Windy -> Enoch [color=green]
+Chrissy [color=red]
+Chrissy -> Desmond
+Chrissy -> Sherrie
+Chrissy -> Latrina [color=green]
+Gerda
+Gerda -> Pia
+Gerda -> Suzie
+Queen
+Queen -> Chrissy
+Queen -> Suzie
+Queen -> Darell [color=green]
+Robbyn
+Robbyn -> Cassidy
+Robbyn -> Tessie
+Candis [color=red]
+Candis -> Scottie
+Candis -> Georgiana
+Candis -> Nam [color=green]
+Bibi [color=red]
+Bibi -> Kurt
+Bibi -> Juana
+Marlyn [color=red]
+Marlyn -> Maire
+Marlyn -> Isabell
+Marlyn -> Kristie [color=green]
+Patrice [color=red]
+Patrice -> Isabell
+Patrice -> Georgiana
+Geoffrey [color=red]
+Geoffrey -> Desmond
+Geoffrey -> Marlyn
+Gidget [color=red]
+Gidget -> Miquel
+Gidget -> Willa
+Jeniffer [color=red]
+Jeniffer -> Brian
+Jeniffer -> Suzie
+Abby [color=red]
+Abby -> Maire
+Abby -> Isabell
+Rueben [color=red]
+Rueben -> Polly
+Rueben -> Magdalen
+Rueben -> Farah [color=green]
+Farah [color=red]
+Farah -> Shantel
+Farah -> Juana
+Farah -> Rueben [color=green]
+Kassie
+Kassie -> Cory
+Kassie -> Queen
+Nicolas
+Nicolas -> Juana
+Nicolas -> Annamaria
+Nicolas -> Shalon [color=green]
+Juana -> Robbyn [color=green]
+Robbyn -> Juana [color=green]
+}

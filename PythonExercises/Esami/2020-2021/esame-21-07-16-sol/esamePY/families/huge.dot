@@ -1,0 +1,370 @@
+digraph G {rankdir=RL
+Christiane [color=red]
+Rosendo [color=red]
+Elvie
+Brande [color=red]
+Kirstie
+Enoch
+Christinia
+Christinia -> Elton [color=green]
+Katharine [color=red]
+Natividad [color=red]
+Natividad -> Polly [color=green]
+Elton
+Elton -> Christinia [color=green]
+Barabara
+Barabara -> Elvie
+Barabara -> Elton
+Patrice [color=red]
+Patrice -> Christinia
+Patrice -> Christiane
+Vanna
+Vanna -> Patrice
+Vanna -> Katharine
+Cory [color=red]
+Cory -> Elton
+Cory -> Kirstie
+Cory -> Russ [color=green]
+Cari
+Cari -> Rosendo
+Cari -> Elton
+Muoi
+Muoi -> Barabara
+Muoi -> Patrice
+Muoi -> Nam [color=green]
+Clark
+Clark -> Brande
+Clark -> Enoch
+Kathrine
+Kathrine -> Vanna
+Kathrine -> Kirstie
+Nam [color=red]
+Nam -> Elton
+Nam -> Christiane
+Nam -> Muoi [color=green]
+Adam [color=red]
+Adam -> Kathrine
+Adam -> Vanna
+Adam -> Denae [color=green]
+Russ [color=red]
+Russ -> Enoch
+Russ -> Brande
+Russ -> Cory [color=green]
+Denae
+Denae -> Rosendo
+Denae -> Nam
+Denae -> Adam [color=green]
+Kacie
+Kacie -> Patrice
+Kacie -> Kirstie
+Kacie -> Chiquita [color=green]
+Armand [color=red]
+Armand -> Russ
+Armand -> Clark
+Armand -> Lavera [color=green]
+Juana
+Juana -> Cari
+Juana -> Denae
+Chiquita
+Chiquita -> Patrice
+Chiquita -> Muoi
+Chiquita -> Kacie [color=green]
+Adriene
+Adriene -> Kirstie
+Adriene -> Rosendo
+Kiana
+Kiana -> Cory
+Kiana -> Barabara
+Gerda [color=red]
+Gerda -> Cory
+Gerda -> Cari
+Gerda -> Kala [color=green]
+Lavera
+Lavera -> Cory
+Lavera -> Brande
+Lavera -> Armand [color=green]
+Cheryl
+Cheryl -> Vanna
+Cheryl -> Adriene
+Cheryl -> Marisha [color=green]
+Tilda [color=red]
+Tilda -> Juana
+Tilda -> Patrice
+Tilda -> Marna [color=green]
+Marna [color=red]
+Marna -> Denae
+Marna -> Barabara
+Marna -> Tilda [color=green]
+Polly [color=red]
+Polly -> Adam
+Polly -> Patrice
+Polly -> Natividad [color=green]
+Nicolas [color=red]
+Nicolas -> Kiana
+Nicolas -> Cari
+Melodi [color=red]
+Melodi -> Elton
+Melodi -> Polly
+Melodi -> Erich [color=green]
+Kelli [color=red]
+Kelli -> Kirstie
+Kelli -> Nam
+Rodrigo
+Rodrigo -> Marna
+Rodrigo -> Christinia
+Londa
+Londa -> Marna
+Londa -> Juana
+Londa -> Morgan [color=green]
+Annabelle [color=red]
+Annabelle -> Cory
+Annabelle -> Clark
+Annabelle -> Cherish [color=green]
+Morgan
+Morgan -> Cory
+Morgan -> Cari
+Morgan -> Londa [color=green]
+Deirdre
+Deirdre -> Patrice
+Deirdre -> Kathrine
+Jacelyn
+Jacelyn -> Brande
+Jacelyn -> Chiquita
+Jacelyn -> Dominique [color=green]
+Cherish
+Cherish -> Juana
+Cherish -> Brande
+Cherish -> Annabelle [color=green]
+Saturnina
+Saturnina -> Rosendo
+Saturnina -> Barabara
+Saturnina -> Jerrod [color=green]
+Dominica [color=red]
+Dominica -> Natividad
+Dominica -> Rodrigo
+Marisha [color=red]
+Marisha -> Londa
+Marisha -> Patrice
+Marisha -> Cheryl [color=green]
+Karri [color=red]
+Karri -> Natividad
+Karri -> Cherish
+Karri -> Tambra [color=green]
+Rocky
+Rocky -> Nicolas
+Rocky -> Patrice
+Rocky -> Goldie [color=green]
+Dominique [color=red]
+Dominique -> Rodrigo
+Dominique -> Nicolas
+Dominique -> Jacelyn [color=green]
+Gus [color=red]
+Gus -> Vanna
+Gus -> Nicolas
+Gus -> Lonnie [color=green]
+Latina [color=red]
+Latina -> Denae
+Latina -> Rodrigo
+Latina -> Bailey [color=green]
+Lonnie [color=red]
+Lonnie -> Clark
+Lonnie -> Marisha
+Lonnie -> Gus [color=green]
+Jerrod
+Jerrod -> Marna
+Jerrod -> Kacie
+Jerrod -> Saturnina [color=green]
+Chanda
+Chanda -> Cory
+Chanda -> Kirstie
+Chanda -> Quentin [color=green]
+Linn [color=red]
+Linn -> Clark
+Linn -> Russ
+Herma [color=red]
+Herma -> Kelli
+Herma -> Linn
+Estell
+Estell -> Clark
+Estell -> Katharine
+Estell -> Eden [color=green]
+Lyda [color=red]
+Lyda -> Denae
+Lyda -> Rodrigo
+Farah
+Farah -> Polly
+Farah -> Dominica
+Erich
+Erich -> Lyda
+Erich -> Marisha
+Erich -> Melodi [color=green]
+Kala
+Kala -> Jerrod
+Kala -> Tilda
+Kala -> Gerda [color=green]
+Jerold
+Jerold -> Christinia
+Jerold -> Kacie
+Quentin
+Quentin -> Adriene
+Quentin -> Jacelyn
+Quentin -> Chanda [color=green]
+Sherlene
+Sherlene -> Marisha
+Sherlene -> Polly
+Zenia
+Zenia -> Adriene
+Zenia -> Erich
+Zenia -> Emanuel [color=green]
+Goldie
+Goldie -> Adriene
+Goldie -> Gerda
+Goldie -> Rocky [color=green]
+Bailey [color=red]
+Bailey -> Juana
+Bailey -> Cari
+Bailey -> Latina [color=green]
+Latrina
+Latrina -> Lyda
+Latrina -> Patrice
+Tambra
+Tambra -> Vanna
+Tambra -> Brande
+Tambra -> Karri [color=green]
+Noah [color=red]
+Noah -> Morgan
+Noah -> Armand
+Eden [color=red]
+Eden -> Bailey
+Eden -> Rosendo
+Eden -> Estell [color=green]
+Darell [color=red]
+Darell -> Jerrod
+Darell -> Lavera
+Tiny [color=red]
+Tiny -> Saturnina
+Tiny -> Adam
+Annamaria [color=red]
+Annamaria -> Noah
+Annamaria -> Deirdre
+Lakisha
+Lakisha -> Darell
+Lakisha -> Patrice
+Grace
+Grace -> Deirdre
+Grace -> Russ
+Kurt
+Kurt -> Lonnie
+Kurt -> Tambra
+Ted [color=red]
+Ted -> Brande
+Ted -> Cherish
+Gail [color=red]
+Gail -> Ted
+Gail -> Cherish
+Holley
+Holley -> Marna
+Holley -> Nicolas
+Kali
+Kali -> Lakisha
+Kali -> Katharine
+Aurora
+Aurora -> Lakisha
+Aurora -> Kala
+Marcos
+Marcos -> Tiny
+Marcos -> Grace
+Eliana
+Eliana -> Sherlene
+Eliana -> Eden
+Eliana -> Alison [color=green]
+Alison [color=red]
+Alison -> Tiny
+Alison -> Gail
+Alison -> Eliana [color=green]
+Shantel
+Shantel -> Erich
+Shantel -> Cari
+Vi
+Vi -> Christiane
+Vi -> Tiny
+Vi -> Jesenia [color=green]
+Jesenia [color=red]
+Jesenia -> Gus
+Jesenia -> Lyda
+Jesenia -> Vi [color=green]
+Douglass [color=red]
+Douglass -> Russ
+Douglass -> Kurt
+Douglass -> Emmie [color=green]
+Emanuel
+Emanuel -> Marcos
+Emanuel -> Katharine
+Emanuel -> Zenia [color=green]
+Yon [color=red]
+Yon -> Jerrod
+Yon -> Annabelle
+Elana [color=red]
+Elana -> Rosendo
+Elana -> Enoch
+Elana -> Emelda [color=green]
+Emelda [color=red]
+Emelda -> Dominique
+Emelda -> Vi
+Emelda -> Elana [color=green]
+Emmie [color=red]
+Emmie -> Jacelyn
+Emmie -> Karri
+Emmie -> Douglass [color=green]
+Buena
+Buena -> Elton
+Buena -> Lakisha
+Saul
+Saul -> Lyda
+Saul -> Farah
+Saul -> Lloyd [color=green]
+Eula [color=red]
+Eula -> Eden
+Eula -> Tambra
+Eula -> Gerald [color=green]
+Markus
+Markus -> Natividad
+Markus -> Brande
+Sena
+Sena -> Jacelyn
+Sena -> Alison
+Lloyd
+Lloyd -> Emanuel
+Lloyd -> Karri
+Lloyd -> Saul [color=green]
+Gerald
+Gerald -> Dominica
+Gerald -> Linn
+Gerald -> Eula [color=green]
+Scottie [color=red]
+Scottie -> Linn
+Scottie -> Cheryl
+Eugene
+Eugene -> Chanda
+Eugene -> Adam
+Eugene -> Leandra [color=green]
+Leandra [color=red]
+Leandra -> Buena
+Leandra -> Deirdre
+Leandra -> Eugene [color=green]
+Tiffany
+Tiffany -> Sena
+Tiffany -> Buena
+Pei
+Pei -> Emmie
+Pei -> Aurora
+Lucia [color=red]
+Lucia -> Gail
+Lucia -> Muoi
+Serafina [color=red]
+Serafina -> Jacelyn
+Serafina -> Aurora
+Shoshana
+Shoshana -> Eugene
+Shoshana -> Emelda
+}

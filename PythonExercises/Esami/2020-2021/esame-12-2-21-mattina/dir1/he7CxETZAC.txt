@@ -1,0 +1,3 @@
+ocarina  musica fotocamera 
+locale focalizzatore
+nuovo giocare monolocale

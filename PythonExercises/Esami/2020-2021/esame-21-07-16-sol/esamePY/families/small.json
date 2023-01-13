@@ -1,0 +1,132 @@
+{
+    "Tiny": {
+        "alive": false,
+        "parents": [],
+        "spouse": "Marcos"
+    },
+    "Marcos": {
+        "alive": false,
+        "parents": [],
+        "spouse": "Tiny"
+    },
+    "Mickey": {
+        "alive": false,
+        "parents": [],
+        "spouse": null
+    },
+    "Brian": {
+        "alive": true,
+        "parents": [],
+        "spouse": null
+    },
+    "Coreen": {
+        "alive": false,
+        "parents": [],
+        "spouse": "Rocky"
+    },
+    "Jeana": {
+        "alive": true,
+        "parents": [],
+        "spouse": null
+    },
+    "Emanuel": {
+        "alive": true,
+        "parents": [],
+        "spouse": null
+    },
+    "Jerold": {
+        "alive": true,
+        "parents": [],
+        "spouse": null
+    },
+    "Rocky": {
+        "alive": true,
+        "parents": [],
+        "spouse": "Coreen"
+    },
+    "Pedro": {
+        "alive": false,
+        "parents": [],
+        "spouse": null
+    },
+    "Zenia": {
+        "alive": true,
+        "parents": [
+            "Jerold",
+            "Mickey"
+        ],
+        "spouse": null
+    },
+    "Kacie": {
+        "alive": false,
+        "parents": [
+            "Zenia",
+            "Jerold"
+        ],
+        "spouse": null
+    },
+    "Douglass": {
+        "alive": true,
+        "parents": [
+            "Tiny",
+            "Kacie"
+        ],
+        "spouse": "Jaunita"
+    },
+    "Ricardo": {
+        "alive": true,
+        "parents": [
+            "Rocky",
+            "Tiny"
+        ],
+        "spouse": null
+    },
+    "Jaunita": {
+        "alive": false,
+        "parents": [
+            "Marcos",
+            "Emanuel"
+        ],
+        "spouse": "Douglass"
+    },
+    "Cleora": {
+        "alive": true,
+        "parents": [
+            "Jeana",
+            "Ricardo"
+        ],
+        "spouse": null
+    },
+    "Talia": {
+        "alive": true,
+        "parents": [
+            "Tiny",
+            "Marcos"
+        ],
+        "spouse": null
+    },
+    "Jesenia": {
+        "alive": false,
+        "parents": [
+            "Zenia",
+            "Jerold"
+        ],
+        "spouse": null
+    },
+    "Lakisha": {
+        "alive": false,
+        "parents": [
+            "Jaunita",
+            "Mickey"
+        ],
+        "spouse": null
+    },
+    "Galina": {
+        "alive": true,
+        "parents": [
+            "Tiny",
+            "Marcos"
+        ],
+        "spouse": null
+    }
+}
