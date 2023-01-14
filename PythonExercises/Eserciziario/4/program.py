@@ -14,34 +14,5 @@ def es4(fimm, fimm1, h1, w1):
     caso di parita' di occorrenze massime il colore del pixel che viene prima lessicograficamente.
     Per caricare e salvare i file PNG si possono usare load e save della libreria immagini.
     '''
-    #scrivi qui il tuo codice
-    imgNew = []
-    imgImport = immagini.load(fimm)
-    altezza = len(imgImport)
-    larghezza = len(imgImport[0])
-    colori = {}
-    # ho creato la nuova immagine
-    for _ in range(altezza*h1):
-      riga=[]
-      for _ in range(larghezza*w1):
-        riga.append(0)
-      imgNew.append(riga)
-    # lavoro sulla immagine vecchia
-    for x in range(altezza):
-      for y in range(larghezza):
-          colorePixel = imgImport[x][y]
-          imgNew = disegnaRettangolo(imgNew, x*h1, y*w1, h1, w1, colorePixel)         
-          if colorePixel in colori:
-            colori[colorePixel]+=1
-          else:
-            colori[colorePixel]=1
-    immagini.save(imgNew, fimm1)
-    maxColore = max(colori.values())
-    listaColori = (list(filter(lambda x: colori[x] == maxColore, colori)))
-    return listaColori[0]
-def disegnaRettangolo(img, x, y, h, w, c):
-    for i in range(x,x+h):
-      for j in range(y,y+w):
-        img[i][j]=c
-    return img  
+    
 print(es4('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Immagini/4/cubo.png','test8_1.png',2,2))

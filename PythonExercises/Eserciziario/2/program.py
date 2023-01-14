@@ -21,5 +21,20 @@ def es2(ls,ftesto):
    'abba' = 'ab' +'ba'
    'ccc'= 'c' + 'cc'
    '''
-   #inserisci qui il tuo codice
-   pass
+   with open(ftesto, 'r') as f:
+      text = f.read()
+      new = text.replace(",", " ")
+   parole = new.split()
+   risultato = set()
+   for i in range(len(parole)-1):
+      parola =parole[i]+parole[i+1]
+      if parola in ls:
+         risultato.add(parola)
+   temp = []
+   for parola in ls:
+      if parola not in risultato:
+         temp.append(parola)
+   ls[:] = temp
+   return len(risultato)
+#print(es2(['b', 'abba', 'babc','ccc', 'bba', 'bb' ],'/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Eserciziario/2/ft1.txt'))
+#print(es2([ 'bab', 'abba','bc', 'cc', 'ccc' ],'/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Eserciziario/2/ft1.txt'))

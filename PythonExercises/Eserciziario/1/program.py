@@ -32,8 +32,16 @@ def es1(tree1,tree2):
       6    7          5   2         28 26             |
      /     \         /    \        /    \             |
      8      9       9      8      17    17            | 
-     
-
      I due alberi in input non vanno modificati
     '''
+    
     pass
+    
+def somma(tree):
+    
+    pass
+lista1 = [9,[2,[6,[5, None, None],[5, None, None]],[6,[5, None, None],[5, None, None]]],
+        [4,[6,[5, None, None],[5, None, None]],[6,[5, None, None],[5, None, None]]]]
+lista2 = [4,[4,[5,[1, None, None],[6, None, None]],[6,[6, None, None],[1, None, None]]],
+            [4,[7,[1, None, None],[6, None, None]],[8,[6, None, None],[1, None, None]]]]
+print(lista1, lista2)

@@ -18,4 +18,15 @@ def es5(insieme,k):
 
     SUGGERIMENTO: potete simulare il ciclo su k con la ricorsione
     '''
-    pass
+    return es5_ric(insieme,k, insieme)
+def es5_ric(insieme, k, out):
+    if k == 1:
+        return out
+    else:
+        nuovo = set()
+        for a in insieme:
+            for b in out:
+                nuovo.add(a+b)
+        return es5_ric(insieme, k-1, nuovo)
+        
+print(es5({'a','bb','c'},3))

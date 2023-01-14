@@ -109,12 +109,9 @@ l'immagine da costruire è quella nel file ex2/expected01.png
 NOTA: vi suggeriamo con forza di spezzare il vostro codice in funzioni
 semplici.
 """
-
 import images
-
-
 def ex2(img_in, img_out, colors):
-    # INSERISCI QUI I TUO CODICE
+    print(colors)
     pass
 
     
@@ -144,15 +141,24 @@ la concatenazione fra stringhe con il carattere '/')
 NOTA: vi suggeriamo con forza di spezzare il vostro codice in funzioni
 semplici.
 """
-
 import os
-
-
 def ex3(directory, namefile):
-    # INSERISCI QUI I TUO CODICE
-    pass
-
-
+    return ex3_ric(directory,namefile, [])
+def ex3_ric(directory, namefile, result):
+    for f in os.listdir(directory):
+        path = directory + '/' + f
+        if os.path.isdir(path):
+            result = ex3_ric(path, namefile, result)
+        elif os.path.isfile(path):
+            if f == namefile:
+                with open(path, 'r') as f:  
+                   for line in f:
+                     if result == []:
+                        result = [int(x) for x in line.split()]
+                     else:
+                        new_lista = [int(x) for x in line.split()]
+                        result = [sum(x) for x in zip(result, new_lista)]           
+    return result
 # %% ----------------------------------- EX.4 ----------------------------------- #
 """
 Ex4: 6+3 punti
@@ -170,19 +176,14 @@ Esempio: se strings={'a','b','c','de'}, la funzione ex4(strings, 2)
 ritorna l'insieme {'ab','ac','ade','ba','ca','dea','bc','bde','cb','deb','cde','dec'} (6 punti)
 oppure la lista ['ade', 'bde', 'cde', 'dea', 'deb', 'dec', 'ab', 'ac', 'ba', 'bc', 'ca', 'cb'] (9 punti)
 """
-
-
 def ex4(strings, n):
     # INSERISCI QUI I TUO CODICE
     pass
-
 ###################################################################################
 if __name__ == '__main__':
     # inserisci qui i tuoi test
-    print('*'*50)
-    print('ITA\nDevi eseguire il grade.py se vuoi debuggare con il grader incorporato.')
-    print('Altrimenit puoi inserire qui del codice per testare le tue funzioni ma devi scriverti i casi che vuoi testare')
-    print('*'*50)
-    print('ENG\nYou have to run grade.py if you want to debug with the automatic grader.')
-    print('Otherwise you can insert here you code to test the functions but you have to write your own tests')
-    print('*'*50)
+    #print(ex3('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/esame-12-9-22-sol/ex3/A','a.txt'))
+    #print(ex2('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-1/ex2/image01.png',
+    #           '/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-1/ex2/expected01.png',
+    #           {(255,0,0):(10,20), (0,255,0):(30,40), (255,0,255):(10,10)}))
+    print('Ciao')

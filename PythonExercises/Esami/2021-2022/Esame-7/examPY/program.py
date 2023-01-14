@@ -24,8 +24,6 @@ matricola   = "MATRICOLA"
 # Per controllare lo stack trace degli errori, si può decommentare la linea
 # dedicata in testlib.py (vedere il commento nel corpo della funzione runOne)
 ################################################################################
-
-
 # ----------------------------------- EX.1 ----------------------------------- #
 ''' Ex 1: 7 punti
     Si implementi una funzione che prende in ingresso tre nomi di file
@@ -47,15 +45,43 @@ matricola   = "MATRICOLA"
     sono, rispettivamente, il numero di stringhe e il numero di righe
     scritte in file3.
 '''
-
-
 def ex1(file1, file2, file3):
-    ### INSERIRE QUI IL CODICE
-    pass
-
+    # una riga per ogni riga di file1 la cui corrispondente riga in file2
+    # ha almeno una stringa in comune.
+    f1 = open(file1, "r")
+    f2 = open(file2, "r")
+    f3 = open(file3, "w")
+    l1 = f1.readlines()
+    l2 = f2.readlines()
+    stringcount = 0
+    rowcount = 0
+    for i in range(len(l1)):
+        L1 = l1[i]
+        L2 = l2[i]
+        L1 = L1.replace("\n", "")
+        L1 = L1.replace("\t", " ")
+        L1 = L1.replace(",", " ")
+        L1 = L1.replace(";", " ")
+        L2 = L2.replace("\n", "")
+        L2 = L2.replace("\t", " ")
+        L2 = L2.replace(",", " ")
+        L2 = L2.replace(";", " ")
+        ws1 = L1.split(" ")
+        ws1 = [x for x in ws1 if x != ""]
+        ws2 = L2.split(" ")
+        ws2 = [x for x in ws2 if x != ""]
+        ws3 = []
+        for w1 in ws1:
+            if w1 in ws2:
+                ws3.append(w1)
+        if ws3 != []:
+            ws3 = sorted(ws3,key=lambda x: (len(x), x))
+            f3.write(" ".join(ws3)  + '\n')
+            stringcount += len(ws3)
+            rowcount += 1
+    #(numero di stringhe, numero di righe) in file 3.
+    return (stringcount, rowcount)
 # ----------------------------------- EX.2 ----------------------------------- #
-
-
 ''' Ex. 2: 7 punti
     Si scriva una funzione ex2(gridFilePath) che, data una griglia NxN
     contenuta in un file json come una lista di liste, restituisce un
@@ -87,17 +113,13 @@ def ex1(file1, file2, file3):
     Nota: per caricare la griglia potete usare json.load()
 
 '''
-
-
 import json
-
 def ex2(gridFilePath):
     ### INSERIRE QUI IL CODICE ###
-    pass
-
-
+    with open(gridFilePath, 'r') as f:
+        matrice = json.load(f)
+    minuto = 0
 # ----------------------------------- EX.3 ----------------------------------- #
-
 ''' Ex 3: 9 punti
     Si implementi una funzione ricorsiva che prende in ingresso una
     coppia di stringhe a e b, e un intero k e ritorna una lista.
@@ -117,15 +139,17 @@ def ex2(gridFilePath):
     funzione, altrimenti il sistema di test non la rileverà la ricorsione
     e tutti i test falliranno.
 '''
-
-
 def ex3(a, b, k):
-    ### INSERIRE QUI IL CODICE ###
-    pass
-
-
+    res = []
+    ex3_ric(a,b,k,res)
+    return res
+def ex3_ric(a,b,k,res):
+    if len(a)<k:return res
+    for s in range(0, len(b) - (k-1)):
+        print(a[0:k]+b[s:s+k])
+        res.append(a[0:k]+b[s:s+k])
+    ex3_ric(a[1:],b,k,res)
 # ----------------------------------- EX.4 ----------------------------------- #
-
 '''Ex. 4: 9 punti
     Scrivere una funzione ex4(folderPath), ricorsiva o utilizzando
     funzioni/metodi ricorsivi che, dato il percorso di una cartella
@@ -162,15 +186,35 @@ def ex3(a, b, k):
     funzione, altrimenti il sistema di test non la rileverà la ricorsione
     e tutti i test falliranno.
 '''
-
 import os
-
 def ex4(folderPath):
-    ### INSERIRE QUI IL CODICE ###
-    pass
-
+    return ex4_ric(folderPath, {})
+def ex4_ric(folderPath, result):
+    for f in os.listdir(folderPath):
+        path = folderPath + '/' + f
+        if os.path.isdir(path):
+            result = ex4_ric(path, result)
+        elif os.path.isfile(path):
+            with open(path, 'r') as f:
+                for line in f:
+                    valore = 0
+                    for lettera in line:
+                        if lettera != "\n":
+                            valore += ord(lettera)
+                    if path not in result:
+                        result[path] = valore
+                    else: result[path] += valore
+    return result
 # ----------------------------------- END ----------------------------------- #
-
 if __name__ == '__main__':
+    #print(ex4('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-7/examPY/ex4/test01'))
+    #print(ex4('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-7/examPY/ex4/test02'))
+    #print(ex2('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-7/examPY/ex2/grid01.json'))
+    #print(ex3('casa', 'riccio', 3))
+    print(ex1('/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-7/examPY/ex1/f1.txt',
+              '/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-7/examPY/ex1/f2.txt',
+              '/Users/lucian/Documents/GitHub/UniExercises/PythonExercises/Esami/2021-2022/Esame-7/examPY/ex1/test.txt'))
     pass
     ### INSERITE QUI IL CODICE PER I VOSTRI TEST ###
+    #expected = {'ex4/test01/f1/f1-1/t2.txt': 1722, 'ex4/test01/t1.txt': 1116}
+    #expected = {'ex4/test02/f1/f1-1/t1.txt': 42248, 'ex4/test02/f1/f1-2/t2.txt': 83019, 'ex4/test02/f2/f2-1/t1.txt': 1289763, 'ex4/test02/f2/f2-2/t2.txt': 3901830}

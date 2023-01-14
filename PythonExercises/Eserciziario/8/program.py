@@ -29,4 +29,16 @@ grazie alle seguenti fusioni:
 'aacd'  'acde'   ---> 'aacde'    con suffisso 'acd'
 '''
 def es8(insieme):
-  pass
+  risultato = []
+  for parola1 in insieme:
+    for parola2 in insieme-{parola1}:
+      for i in range(2,len(parola1)+1):
+        if parola1[-i:] == parola2[:i]:
+          risultato.append(parola1[:]+parola2[i:])
+        else: continue
+  risultato = set(risultato)
+  risultato = list(risultato)
+  risultato.sort()
+  return risultato
+
+print(es8({  'aaaa', 'acde', 'aacd', 'aaaade'}))

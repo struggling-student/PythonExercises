@@ -323,9 +323,9 @@ def test_ex4_4():
 tests = [
     # TO RUN ONLY SOME OF THE TESTS, comment any of the following entries
     # PER DISATTIVARE ALCUNI TEST, commentare gli elementi seguenti
-    test_ex1_1,  test_ex1_2, test_ex1_3,              # k nearest
-    test_ex2_1, test_ex2_2, test_ex2_3,               # 1-NN
-    test_ex3_1, test_ex3_2, test_ex3_3, test_ex3_4,   # albero con op immagini
+    #test_ex1_1,  test_ex1_2, test_ex1_3,              # k nearest
+    #test_ex2_1, test_ex2_2, test_ex2_3,               # 1-NN
+    #test_ex3_1, test_ex3_2, test_ex3_3, test_ex3_4,   # albero con op immagini
     test_ex4_1, test_ex4_2, test_ex4_3, test_ex4_4,   # combinazioni sillabe
     test_personal_data_entry,
 ]

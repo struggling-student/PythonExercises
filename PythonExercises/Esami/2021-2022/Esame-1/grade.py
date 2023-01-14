@@ -278,11 +278,11 @@ def test_ex4_3():
 tests = [
     # TO RUN ONLY SOME OF THE TESTS, comment any of the following entries
     # PER DISATTIVARE ALCUNI TEST, commentare gli elementi seguenti
-    test_ex1_1,  test_ex1_2, test_ex1_3,            # lista triangoli
+    #test_ex1_1,  test_ex1_2, test_ex1_3,            # lista triangoli
     test_ex2_1, test_ex2_2, test_ex2_3,             # disegni rettangoli
     test_ex3_1, test_ex3_2, test_ex3_3,             # file con liste
-    test_ex4_1,  test_ex4_2, test_ex4_3,             # combinazioni stringhe
-    test_personal_data_entry,
+    #test_ex4_1,  test_ex4_2, test_ex4_3,             # combinazioni stringhe
+    #test_personal_data_entry,
 ]
 
 

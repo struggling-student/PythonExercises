@@ -148,10 +148,7 @@ def ex2(gridFilePath):
         gridCopy = [x.copy() for x in grid]
         grid = oneMinute(grid)
         counter += 1
-
     return -1
-
-
 # ----------------------------------- EX.3 ----------------------------------- #
 
 ''' Ex 3: 9 punti

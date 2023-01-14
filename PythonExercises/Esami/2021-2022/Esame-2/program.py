@@ -242,17 +242,20 @@ Esercizio 4: 9 punti
     ['boscosa', 'bossaco', 'cobossa', 'cosabos', 'sabosco', 'sacobos',
      'bosco', 'bossa', 'cobos', 'sabos', 'cosa', 'saco'] (8 punti)
     ''' 
-def ex4(syllables):
-    # INSERISCI QUI IL TUO CODICE
-    pass
 
+def ex4(syllables):
+    result = ex4_ric(set(syllables))
+    return sorted(set(result), key=lambda p: (-len(p),p) )
+def ex4_ric(parole):
+    risultato = []
+    for parola in parole:
+      resto = parole - {parola}
+      for p in ex4_ric(resto) + list(resto):
+        print(p)
+        risultato +=  [parola+p, p+parola]
+    return risultato
 ###################################################################################
 if __name__ == '__main__':
     # inserisci qui i tuoi test
-    print('*'*50)
-    print('ITA\nDevi eseguire il grade.py se vuoi debuggare con il grader incorporato.')
-    print('Altrimenit puoi inserire qui del codice per testare le tue funzioni ma devi scriverti i casi che vuoi testare')
-    print('*'*50)
-    print('ENG\nYou have to run grade.py if you want to debug with the automatic grader.')
-    print('Otherwise you can insert here you code to test the functions but you have to write your own tests')
-    print('*'*50)
+    print(ex4(['bos', 'co', 'sa']))
+    print('ciao')
