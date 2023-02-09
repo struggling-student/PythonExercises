@@ -17,7 +17,10 @@
 - Python libraries for graphics, file management, word processing / html and Internet access
 - Debugging and program testing
 ## Download
-- `git clone - ``
+You can use git or download it from the realeases section.
+```
+git clone 
+```
 ## Disclaimer
 **Copyright of the WorkBook** [Here the reference to official website](https://q2a.di.uniroma1.it/)
 ~~~
