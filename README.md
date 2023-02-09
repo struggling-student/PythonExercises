@@ -19,7 +19,7 @@
 ## Download
 You can use git or download it from the realeases section.
 ```
-git clone 
+git clone https://github.com/LucianCrainic/PythonExercises.git
 ```
 ## Disclaimer
 **Copyright of the WorkBook** [Here the reference to official website](https://q2a.di.uniroma1.it/)
