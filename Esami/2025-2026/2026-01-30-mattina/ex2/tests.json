@@ -1,0 +1,114 @@
+[
+    {
+        "tree": [
+            19,
+            null,
+            null
+        ],
+        "expected": "19,#,#"
+    },
+    {
+        "tree": [
+            -4,
+            [
+                -7,
+                null,
+                null
+            ],
+            [
+                19,
+                [
+                    13,
+                    null,
+                    null
+                ],
+                [
+                    7,
+                    null,
+                    null
+                ]
+            ]
+        ],
+        "expected": "-4,-7,#,#,19,13,#,#,7,#,#"
+    },
+    {
+        "tree": [
+            27,
+            [
+                -9,
+                null,
+                null
+            ],
+            [
+                -6,
+                null,
+                null
+            ]
+        ],
+        "expected": "27,-9,#,#,-6,#,#"
+    },
+    {
+        "tree": [
+            -4,
+            null,
+            [
+                15,
+                null,
+                null
+            ]
+        ],
+        "expected": "-4,#,15,#,#"
+    },
+    {
+        "tree": [
+            -5,
+            [
+                26,
+                [
+                    21,
+                    null,
+                    null
+                ],
+                [
+                    -9,
+                    null,
+                    null
+                ]
+            ],
+            [
+                -8,
+                null,
+                null
+            ]
+        ],
+        "expected": "-5,26,21,#,#,-9,#,#,-8,#,#"
+    },
+    {
+        "tree": [
+            30,
+            [
+                14,
+                null,
+                null
+            ],
+            null
+        ],
+        "expected": "30,14,#,#,#"
+    },
+    {
+        "tree": [
+            14,
+            null,
+            null
+        ],
+        "expected": "14,#,#"
+    },
+    {
+        "tree": [
+            20,
+            null,
+            null
+        ],
+        "expected": "20,#,#"
+    }
+]

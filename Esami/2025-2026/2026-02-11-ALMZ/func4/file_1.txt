@@ -1,0 +1,9 @@
+banane  ,  1 
+
+kiwi,0 
+  banane,5
+ pere  ,  5  
+pere  ,  -1 
+banane  ,  -2  
+pere , -1 
+pere , 9 

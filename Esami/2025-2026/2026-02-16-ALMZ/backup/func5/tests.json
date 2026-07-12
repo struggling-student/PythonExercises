@@ -1,0 +1,110 @@
+[
+    {
+        "path_in": "func5/input_0.png",
+        "path_expected": "func5/expected_0.png",
+        "c1": [
+            255,
+            0,
+            255
+        ],
+        "c2": [
+            0,
+            255,
+            255
+        ],
+        "expected_counts": [
+            8,
+            8
+        ]
+    },
+    {
+        "path_in": "func5/input_1.png",
+        "path_expected": "func5/expected_1.png",
+        "c1": [
+            255,
+            0,
+            255
+        ],
+        "c2": [
+            0,
+            255,
+            255
+        ],
+        "expected_counts": [
+            10,
+            15
+        ]
+    },
+    {
+        "path_in": "func5/input_2.png",
+        "path_expected": "func5/expected_2.png",
+        "c1": [
+            255,
+            0,
+            255
+        ],
+        "c2": [
+            0,
+            255,
+            255
+        ],
+        "expected_counts": [
+            15,
+            14
+        ]
+    },
+    {
+        "path_in": "func5/input_3.png",
+        "path_expected": "func5/expected_3.png",
+        "c1": [
+            255,
+            0,
+            255
+        ],
+        "c2": [
+            0,
+            255,
+            255
+        ],
+        "expected_counts": [
+            9,
+            9
+        ]
+    },
+    {
+        "path_in": "func5/input_4.png",
+        "path_expected": "func5/expected_4.png",
+        "c1": [
+            255,
+            0,
+            255
+        ],
+        "c2": [
+            0,
+            255,
+            255
+        ],
+        "expected_counts": [
+            10,
+            8
+        ]
+    },
+    {
+        "path_in": "func5/input_5.png",
+        "path_expected": "func5/expected_5.png",
+        "c1": [
+            255,
+            0,
+            255
+        ],
+        "c2": [
+            0,
+            255,
+            255
+        ],
+        "expected_counts": [
+            7,
+            11
+        ]
+    }
+]

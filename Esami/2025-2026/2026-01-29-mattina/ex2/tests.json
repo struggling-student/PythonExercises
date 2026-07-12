@@ -1,0 +1,113 @@
+[
+    {
+        "data": {
+            "b": {
+                "d": {
+                    "a": 88,
+                    "c": 51
+                }
+            },
+            "d": 34
+        },
+        "chain": [
+            "b",
+            "d",
+            "a"
+        ],
+        "expected": 4
+    },
+    {
+        "data": {
+            "d": {
+                "b": {
+                    "data": {
+                        "settings": 86
+                    },
+                    "info": 2
+                }
+            },
+            "a": 48
+        },
+        "chain": [
+            "d",
+            "b",
+            "data",
+            "settings"
+        ],
+        "expected": 5
+    },
+    {
+        "data": {
+            "user": {
+                "settings": {
+                    "a": {
+                        "b": {
+                            "data": 30
+                        }
+                    },
+                    "b": 26,
+                    "info": 38
+                },
+                "d": 45
+            },
+            "c": 73
+        },
+        "chain": [
+            "user",
+            "settings",
+            "a",
+            "b",
+            "data"
+        ],
+        "expected": 6
+    },
+    {
+        "data": {
+            "c": {
+                "a": 96
+            },
+            "user": 8
+        },
+        "chain": [
+            "c",
+            "a"
+        ],
+        "expected": 3
+    },
+    {
+        "data": {
+            "settings": {
+                "data": 79,
+                "settings": 12
+            },
+            "info": 45
+        },
+        "chain": [
+            "settings",
+            "data"
+        ],
+        "expected": 3
+    },
+    {
+        "data": {
+            "info": {
+                "user": {
+                    "d": {
+                        "data": 62
+                    }
+                },
+                "settings": 10,
+                "info": 78
+            },
+            "b": 17,
+            "user": 45
+        },
+        "chain": [
+            "info",
+            "user",
+            "d",
+            "data"
+        ],
+        "expected": 5
+    }
+]

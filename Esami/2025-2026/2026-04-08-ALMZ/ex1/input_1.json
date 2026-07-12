@@ -1,0 +1,20 @@
+{
+    "tree": [
+        10,
+        [
+            8,
+            null,
+            [
+                13,
+                null,
+                null
+            ]
+        ],
+        [
+            30,
+            null,
+            null
+        ]
+    ],
+    "expected": true
+}

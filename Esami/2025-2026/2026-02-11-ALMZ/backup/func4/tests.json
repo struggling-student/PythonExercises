@@ -1,0 +1,36 @@
+[
+    {
+        "path": "func4/file_0.txt",
+        "expected": {
+            "kiwi": 4,
+            "mele": 9,
+            "banane": 9
+        }
+    },
+    {
+        "path": "func4/file_1.txt",
+        "expected": {
+            "banane": 4,
+            "kiwi": 0,
+            "pere": 12
+        }
+    },
+    {
+        "path": "func4/file_2.txt",
+        "expected": {
+            "uva": -3,
+            "pane": 3,
+            "banane": 9
+        }
+    },
+    {
+        "path": "func4/file_3.txt",
+        "expected": {
+            "kiwi": -1,
+            "pere": 14,
+            "banane": 0,
+            "pane": 1,
+            "uva": 1
+        }
+    }
+]

@@ -1,0 +1,169 @@
+[
+  {
+    "coppie": [
+      ["colubro","serpente molto molto velenoso che striscia"],
+      [ "cane", "animale domestico a quattro zampe" ],
+      [ "gatto", "felino domestico" ],
+      [ "casa", "edificio per abitare" ]
+    ],
+    "expected": { "c": [ "cane", "colubro" ] }
+  },
+  {
+    "coppie": [
+      [
+        "albero",
+        "pianta con tronco rami e foglie"
+      ],
+      [
+        "abete",
+        "albero sempreverde di alta montagna"
+      ],
+      [
+        "automobile",
+        "veicolo a motore per trasporto su strada"
+      ],
+      [
+        "casa",
+        "edificio per abitare con stanze e arredi"
+      ],
+      [
+        "computer",
+        "macchina elettronica per elaborare dati velocemente"
+      ],
+      [
+        "elefante",
+        "grande mammifero con proboscide e lunghe zanne"
+      ],
+      [
+        "finestra",
+        "apertura nel muro per far entrare luce naturale"
+      ],
+      [
+        "giardino",
+        "terreno coltivato con piante fiori e alberi"
+      ],
+      [
+        "montagna",
+        "rilievo naturale molto alto e dalla cima innevata"
+      ],
+      [
+        "stella",
+        "corpo celeste che brilla di luce propria nel cielo"
+      ],
+      [
+        "gatto",
+        "felino domestico"
+      ],
+      [
+        "cane",
+        "animale fedele"
+      ],
+      [
+        "topo",
+        "piccolo roditore"
+      ],
+      [
+        "uccello",
+        "animale con ali"
+      ],
+      [
+        "pesce",
+        "animale acquatico"
+      ],
+      [
+        "libro",
+        "insieme di fogli"
+      ],
+      [
+        "fiore",
+        "parte della pianta"
+      ],
+      [
+        "sole",
+        "stella luminosa"
+      ],
+      [
+        "luna",
+        "satellite naturale"
+      ],
+      [
+        "monte",
+        "rilievo montuoso"
+      ]
+    ],
+    "expected": {
+      "a": [
+        "abete",
+        "albero",
+        "automobile"
+      ],
+      "c": [
+        "casa",
+        "computer"
+      ],
+      "e": [
+        "elefante"
+      ],
+      "f": [
+        "finestra"
+      ],
+      "g": [
+        "giardino"
+      ],
+      "m": [
+        "montagna"
+      ],
+      "s": [
+        "stella"
+      ]
+    }
+  },
+  {
+    "coppie": [
+      [
+        "sole",
+        "stella luminosa al centro del sistema solare"
+      ],
+      [
+        "luna",
+        "satellite naturale della terra"
+      ],
+      [
+        "sasso",
+        "frammento di roccia"
+      ],
+      [
+        "sedia",
+        "mobile per sedersi con quattro gambe"
+      ]
+    ],
+    "expected": {
+      "s": [
+        "sedia",
+        "sole"
+      ]
+    }
+  },
+  {
+    "coppie": [
+      [
+        "albero",
+        "pianta con tronco rami e foglie"
+      ],
+      [
+        "abete",
+        "albero sempreverde"
+      ],
+      [
+        "ape",
+        "insetto che produce miele e cera"
+      ]
+    ],
+    "expected": {
+      "a": [
+        "albero",
+        "ape"
+      ]
+    }
+  }
+]

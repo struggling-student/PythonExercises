@@ -1,0 +1,5 @@
+acb
+baa
+cba
+acc
+cbc

@@ -1,0 +1,15 @@
+Assegnazione:6
+Espressione:5
+Linguaggio:5
+Ricorsione:5
+Selezione:5
+Ambiente:4
+Analisi:4
+Parametro:4
+Costante:3
+Indice:3
+Modulo:3
+Mondo:2
+Cmt:0
+Gym:0
+Shh:0

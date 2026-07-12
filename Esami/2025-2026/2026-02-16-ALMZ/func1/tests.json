@@ -1,0 +1,16 @@
+[
+    {
+        "moves": "LRFRRDLUFDUDLUF",
+        "expected": [
+            30,
+            0
+        ]
+    },
+    {
+        "moves": "RFURDDRRRUU",
+        "expected": [
+            10,
+            0
+        ]
+    }
+]

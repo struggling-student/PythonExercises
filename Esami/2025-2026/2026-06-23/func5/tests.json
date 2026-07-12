@@ -1,0 +1,12 @@
+[
+  {"input_file": "input_0.png", "expected_file": "expected_0.png", "expected_count": 1},
+  {"input_file": "input_1.png", "expected_file": "expected_1.png", "expected_count": 4},
+  {"input_file": "input_2.png", "expected_file": "expected_2.png", "expected_count": 0},
+  {"input_file": "input_3.png", "expected_file": "expected_3.png", "expected_count": 1},
+  {"input_file": "input_4.png", "expected_file": "expected_4.png", "expected_count": 5},
+  {"input_file": "input_5.png", "expected_file": "expected_5.png", "expected_count": 4},
+  {"input_file": "input_6.png", "expected_file": "expected_6.png", "expected_count": 3},
+  {"input_file": "input_7.png", "expected_file": "expected_7.png", "expected_count": 1},
+  {"input_file": "input_8.png", "expected_file": "expected_8.png", "expected_count": 12},
+  {"input_file": "input_9.png", "expected_file": "expected_9.png", "expected_count": 15}
+]

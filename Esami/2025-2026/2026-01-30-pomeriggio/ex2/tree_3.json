@@ -1,0 +1,2 @@
+{ "tree": [8, [11, [-7, null, null], [13, null, null]], [24, [27, null, null], null]],
+  "expected": "#,#,-7,#,#,13,11,#,#,27,#,24,8" }
