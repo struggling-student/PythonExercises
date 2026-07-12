@@ -1,0 +1,32 @@
+{
+    "tree": [
+        -7,
+        [
+            -4,
+            [
+                -9,
+                null,
+                null
+            ],
+            [
+                11,
+                null,
+                null
+            ]
+        ],
+        [
+            22,
+            [
+                4,
+                null,
+                [
+                    19,
+                    null,
+                    null
+                ]
+            ],
+            null
+        ]
+    ],
+    "expected": false
+}

@@ -1,0 +1,7 @@
+parannanza:4
+settemila:4
+spiedo:3
+uno:2
+abc:1
+194:0
+33:0

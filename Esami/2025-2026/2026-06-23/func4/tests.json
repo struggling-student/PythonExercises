@@ -1,0 +1,10 @@
+[
+  {"input_file": "input_0.txt", "expected_file": "expected_0.txt", "expected_count": 4},
+  {"input_file": "input_1.txt", "expected_file": "expected_1.txt", "expected_count": 0},
+  {"input_file": "input_2.txt", "expected_file": "expected_2.txt", "expected_count": 12},
+  {"input_file": "input_3.txt", "expected_file": "expected_3.txt", "expected_count": 5},
+  {"input_file": "input_4.txt", "expected_file": "expected_4.txt", "expected_count": 2},
+  {"input_file": "input_5.txt", "expected_file": "expected_5.txt", "expected_count": 29},
+  {"input_file": "input_6.txt", "expected_file": "expected_6.txt", "expected_count": 0},
+  {"input_file": "input_7.txt", "expected_file": "expected_7.txt", "expected_count": 40}
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "expr": "9-7+3d5-0",
+        "expected": 17
+    },
+    {
+        "expr": "2d10-9+4d4",
+        "expected": 27
+    },
+    {
+        "expr": "4d9-3d5-7+4d4-5",
+        "expected": 25
+    },
+    {
+        "expr": "1+1+4-1d6-1d10",
+        "expected": -10
+    }
+]

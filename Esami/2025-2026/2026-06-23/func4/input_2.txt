@@ -1,0 +1,15 @@
+Linguaggio
+Ricorsione
+Modulo
+Gym
+Parametro
+Cmt
+Espressione
+Selezione
+Ambiente
+Indice
+Shh
+Assegnazione
+Mondo
+Costante
+Analisi

@@ -1,0 +1,26 @@
+[
+    {
+        "s": "**))*)))))",
+        "expected": false
+    },
+    {
+        "s": "))(****(",
+        "expected": false
+    },
+    {
+        "s": "*)(*)*(()(",
+        "expected": false
+    },
+    {
+        "s": "*)()(*()",
+        "expected": true
+    },
+    {
+        "s": "*(**))*)(*()",
+        "expected": true
+    },
+    {
+        "s": "***))(*(((",
+        "expected": false
+    }
+]

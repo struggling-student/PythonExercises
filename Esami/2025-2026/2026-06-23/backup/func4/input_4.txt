@@ -1,0 +1,3 @@
+AEIOU
+Y
+HELLO

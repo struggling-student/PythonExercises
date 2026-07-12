@@ -1,0 +1,7 @@
+ kiwi,-1
+pere,2  
+  pere , 7 
+banane  ,  0 
+  pane,1 
+  uva,1
+ pere  ,  5  

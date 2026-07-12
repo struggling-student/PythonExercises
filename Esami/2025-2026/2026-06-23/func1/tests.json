@@ -1,0 +1,369 @@
+[
+  {
+    "studenti": [
+      {
+        "name": "Alice",
+        "scores": [
+          18,
+          24
+        ],
+        "bonus": 3
+      },
+      {
+        "name": "Bob",
+        "scores": [
+          30,
+          28
+        ],
+        "bonus": 0
+      }
+    ],
+    "expected": [
+      [
+        "Bob",
+        58
+      ],
+      [
+        "Alice",
+        45
+      ]
+    ]
+  },
+  {
+    "studenti": [
+      {
+        "name": "Zara",
+        "scores": [
+          20
+        ],
+        "bonus": 5
+      },
+      {
+        "name": "Anna",
+        "scores": [
+          20
+        ],
+        "bonus": 5
+      }
+    ],
+    "expected": [
+      [
+        "Anna",
+        25
+      ],
+      [
+        "Zara",
+        25
+      ]
+    ]
+  },
+  {
+    "studenti": [
+      {
+        "name": "Alice",
+        "scores": [
+          10,
+          20,
+          15,
+          5
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Bob",
+        "scores": [
+          30,
+          20
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Carol",
+        "scores": [
+          40
+        ],
+        "bonus": 10
+      },
+      {
+        "name": "Dave",
+        "scores": [
+          25,
+          25
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Eve",
+        "scores": [
+          12,
+          13,
+          15,
+          10
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Frank",
+        "scores": [
+          20,
+          20,
+          5
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Grace",
+        "scores": [
+          35
+        ],
+        "bonus": 10
+      },
+      {
+        "name": "Heidi",
+        "scores": [
+          15,
+          15,
+          15
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Ivan",
+        "scores": [
+          10,
+          10,
+          10,
+          10,
+          5
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Judy",
+        "scores": [
+          30,
+          25
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Karl",
+        "scores": [
+          40,
+          15
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Linda",
+        "scores": [
+          50
+        ],
+        "bonus": 5
+      },
+      {
+        "name": "Mike",
+        "scores": [
+          20,
+          20,
+          15
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Nancy",
+        "scores": [
+          30,
+          30
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Oscar",
+        "scores": [
+          40,
+          20
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Paul",
+        "scores": [
+          25,
+          25,
+          10
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Quinn",
+        "scores": [
+          55
+        ],
+        "bonus": 5
+      },
+      {
+        "name": "Ruth",
+        "scores": [
+          20,
+          20,
+          8
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Sam",
+        "scores": [
+          30,
+          18
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Tina",
+        "scores": [
+          40,
+          8
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Uma",
+        "scores": [
+          15,
+          15,
+          15,
+          3
+        ],
+        "bonus": 0
+      },
+      {
+        "name": "Victor",
+        "scores": [
+          10,
+          10,
+          10
+        ],
+        "bonus": 5
+      },
+      {
+        "name": "Wendy",
+        "scores": [
+          22,
+          22
+        ],
+        "bonus": 6
+      },
+      {
+        "name": "Xander",
+        "scores": [
+          33,
+          33
+        ],
+        "bonus": 0
+      }
+    ],
+    "expected": [
+      [
+        "Xander",
+        66
+      ],
+      [
+        "Nancy",
+        60
+      ],
+      [
+        "Oscar",
+        60
+      ],
+      [
+        "Paul",
+        60
+      ],
+      [
+        "Quinn",
+        60
+      ],
+      [
+        "Judy",
+        55
+      ],
+      [
+        "Karl",
+        55
+      ],
+      [
+        "Linda",
+        55
+      ],
+      [
+        "Mike",
+        55
+      ],
+      [
+        "Alice",
+        50
+      ],
+      [
+        "Bob",
+        50
+      ],
+      [
+        "Carol",
+        50
+      ],
+      [
+        "Dave",
+        50
+      ],
+      [
+        "Eve",
+        50
+      ],
+      [
+        "Wendy",
+        50
+      ],
+      [
+        "Ruth",
+        48
+      ],
+      [
+        "Sam",
+        48
+      ],
+      [
+        "Tina",
+        48
+      ],
+      [
+        "Uma",
+        48
+      ],
+      [
+        "Frank",
+        45
+      ],
+      [
+        "Grace",
+        45
+      ],
+      [
+        "Heidi",
+        45
+      ],
+      [
+        "Ivan",
+        45
+      ],
+      [
+        "Victor",
+        35
+      ]
+    ]
+  },
+  {
+    "studenti": [],
+    "expected": []
+  }
+]

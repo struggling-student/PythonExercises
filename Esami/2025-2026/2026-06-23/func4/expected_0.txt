@@ -1,0 +1,5 @@
+Ciao:3
+Gatto:2
+Mondo:2
+Python:1
+Xyzzy:0

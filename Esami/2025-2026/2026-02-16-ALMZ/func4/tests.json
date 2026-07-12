@@ -1,0 +1,63 @@
+[
+    {
+        "path": "func4/cmd_0.txt",
+        "deck_size": 18,
+        "top_n": 7,
+        "expected": [
+            18,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    {
+        "path": "func4/cmd_1.txt",
+        "deck_size": 26,
+        "top_n": 10,
+        "expected": [
+            23,
+            22,
+            17,
+            20,
+            19,
+            18,
+            21,
+            10,
+            15,
+            14
+        ]
+    },
+    {
+        "path": "func4/cmd_2.txt",
+        "deck_size": 26,
+        "top_n": 6,
+        "expected": [
+            25,
+            7,
+            11,
+            22,
+            21,
+            20
+        ]
+    },
+    {
+        "path": "func4/cmd_3.txt",
+        "deck_size": 30,
+        "top_n": 10,
+        "expected": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            8,
+            26,
+            25,
+            28,
+            29
+        ]
+    }
+]

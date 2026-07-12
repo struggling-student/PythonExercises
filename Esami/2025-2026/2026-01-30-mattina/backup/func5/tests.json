@@ -1,0 +1,86 @@
+[
+    {
+        "path": "func5/img_0.png",
+        "target": [
+            136,
+            0,
+            0
+        ],
+        "expected": [
+            7,
+            2,
+            12,
+            12
+        ]
+    },
+    {
+        "path": "func5/img_1.png",
+        "target": [
+            185,
+            0,
+            0
+        ],
+        "expected": [
+            7,
+            9,
+            9,
+            9
+        ]
+    },
+    {
+        "path": "func5/img_2.png",
+        "target": [
+            118,
+            0,
+            0
+        ],
+        "expected": [
+            6,
+            7,
+            6,
+            11
+        ]
+    },
+    {
+        "path": "func5/img_3.png",
+        "target": [
+            216,
+            0,
+            0
+        ],
+        "expected": [
+            5,
+            6,
+            14,
+            9
+        ]
+    },
+    {
+        "path": "func5/img_4.png",
+        "target": [
+            74,
+            0,
+            0
+        ],
+        "expected": [
+            1,
+            4,
+            19,
+            14
+        ]
+    },
+    {
+        "path": "func5/img_5.png",
+        "target": [
+            199,
+            0,
+            0
+        ],
+        "expected": [
+            8,
+            4,
+            4,
+            14
+        ]
+    }
+]

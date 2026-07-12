@@ -1,0 +1,5 @@
+Ciao
+Mondo
+Xyzzy
+Python
+Gatto

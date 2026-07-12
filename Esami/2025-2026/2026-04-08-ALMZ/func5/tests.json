@@ -1,0 +1,56 @@
+[
+    {
+        "path": "func5/input_0.png",
+        "target": [
+            127,
+            157,
+            218
+        ],
+        "expected": "func5/expected_0.png"
+    },
+    {
+        "path": "func5/input_1.png",
+        "target": [
+            125,
+            232,
+            55
+        ],
+        "expected": "func5/expected_1.png"
+    },
+    {
+        "path": "func5/input_2.png",
+        "target": [
+            201,
+            91,
+            92
+        ],
+        "expected": "func5/expected_2.png"
+    },
+    {
+        "path": "func5/input_3.png",
+        "target": [
+            188,
+            226,
+            94
+        ],
+        "expected": "func5/expected_3.png"
+    },
+    {
+        "path": "func5/input_4.png",
+        "target": [
+            236,
+            172,
+            242
+        ],
+        "expected": "func5/expected_4.png"
+    },
+    {
+        "path": "func5/input_5.png",
+        "target": [
+            255,
+            178,
+            116
+        ],
+        "expected": "func5/expected_5.png"
+    }
+]

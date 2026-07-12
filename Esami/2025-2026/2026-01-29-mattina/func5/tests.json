@@ -1,0 +1,86 @@
+[
+    {
+        "path": "func5/input_0.png",
+        "target": [
+            243,
+            221,
+            175
+        ],
+        "expected": [
+            19,
+            5,
+            3,
+            3
+        ]
+    },
+    {
+        "path": "func5/input_1.png",
+        "target": [
+            108,
+            136,
+            247
+        ],
+        "expected": [
+            2,
+            11,
+            5,
+            2
+        ]
+    },
+    {
+        "path": "func5/input_2.png",
+        "target": [
+            51,
+            76,
+            169
+        ],
+        "expected": [
+            22,
+            19,
+            3,
+            5
+        ]
+    },
+    {
+        "path": "func5/input_3.png",
+        "target": [
+            236,
+            45,
+            212
+        ],
+        "expected": [
+            1,
+            13,
+            2,
+            2
+        ]
+    },
+    {
+        "path": "func5/input_4.png",
+        "target": [
+            247,
+            66,
+            70
+        ],
+        "expected": [
+            14,
+            9,
+            3,
+            2
+        ]
+    },
+    {
+        "path": "func5/input_5.png",
+        "target": [
+            157,
+            22,
+            220
+        ],
+        "expected": [
+            16,
+            21,
+            5,
+            4
+        ]
+    }
+]

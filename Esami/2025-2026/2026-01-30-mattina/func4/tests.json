@@ -1,0 +1,32 @@
+[
+    {
+        "f1": "func4/in1_0.txt",
+        "f2": "func4/in2_0.txt",
+        "expected": [
+            "Riga 3: bbb != diff",
+            "Riga 5: abc != diff"
+        ]
+    },
+    {
+        "f1": "func4/in1_1.txt",
+        "f2": "func4/in2_1.txt",
+        "expected": [
+            "Riga 4: bca != diff"
+        ]
+    },
+    {
+        "f1": "func4/in1_2.txt",
+        "f2": "func4/in2_2.txt",
+        "expected": [
+            "Riga 3: cba != diff",
+            "Riga 4: acc != diff"
+        ]
+    },
+    {
+        "f1": "func4/in1_3.txt",
+        "f2": "func4/in2_3.txt",
+        "expected": [
+            "Riga 3: cac != diff"
+        ]
+    }
+]

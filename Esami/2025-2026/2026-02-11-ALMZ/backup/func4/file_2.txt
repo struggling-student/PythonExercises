@@ -1,0 +1,6 @@
+ uva , -1 
+
+  uva  ,  -2  
+ pane  ,  3 
+
+banane  ,  9  
