@@ -58,12 +58,12 @@ COL = {'RED': '\u001b[31m',
 
 def test_personal_data_entry():
     if 'name' in program.__dict__:
-        assert program.name       != 'NAME', f"{COL['YELLOW']}ERROR: Please assign the 'name' variable with YOUR NAME in program.py{COL['RST']}"
-        assert program.surname    != 'SURNAME', f"{COL['YELLOW']}ERROR: Please assign the 'surname' variable with YOUR SURNAME in program.py{COL['RST']}"
+        assert program.name != 'NAME', f"{COL['YELLOW']}ERROR: Please assign the 'name' variable with YOUR NAME in program.py{COL['RST']}"
+        assert program.surname != 'SURNAME', f"{COL['YELLOW']}ERROR: Please assign the 'surname' variable with YOUR SURNAME in program.py{COL['RST']}"
         assert program.student_id != 'MATRICULATION NUMBER', f"{COL['YELLOW']}ERROR: Please assign the 'student_id' variable with YOUR MATRICULATION NUMBER in program.py{COL['RST']}"
     else:
-        assert program.nome      != 'NOME', f"{COL['YELLOW']}ERRORE: Indica il tuo NOME in program.py{COL['RST']}"
-        assert program.cognome   != 'COGNOME', f"{COL['YELLOW']}ERRORE: Indica il tuo COGNOME in program.py{COL['RST']}"
+        assert program.nome != 'NOME', f"{COL['YELLOW']}ERRORE: Indica il tuo NOME in program.py{COL['RST']}"
+        assert program.cognome != 'COGNOME', f"{COL['YELLOW']}ERRORE: Indica il tuo COGNOME in program.py{COL['RST']}"
         assert program.matricola != 'MATRICOLA', f"{COL['YELLOW']}ERRORE: Indica il tuo NUMERO DI MATRICOLA in program.py{COL['RST']}"
     return 0 # ALL OK, ci pensano le asserzioni a dare errore se c'è qualcosa che non va
 
@@ -264,7 +264,6 @@ def test_func4_4(run=True):
 
 
 # %% ----------------------------------- FUNC5 ------------------------- #
-import images
 
 def do_test_func5(ID, expected):
     img_in  = f'func5/image0{ID}.png'
@@ -445,10 +444,10 @@ if __name__ == '__main__':
     if test_personal_data_entry() < 0:
         print(f"{COL['RED']}PERSONAL INFO MISSING. PLEASE FILL THE INITIAL VARS WITH YOUR NAME SURNAME AND STUDENT_ID{COL['RST']}")
         sys.exit()
-    testlib.runtests(   tests,
-                        verbose=True,
-                        logfile='grade.csv',
-                        stack_trace=DEBUG)
+    testlib.runtests(tests,
+                     verbose=True,
+                     logfile='grade.csv',
+                     stack_trace=DEBUG)
     testlib.check_exam_constraints()
     if 'matricola' in program.__dict__:
         print(f"{COL['GREEN']}Nome: {program.nome}\nCognome: {program.cognome}\nMatricola: {program.matricola}{COL['RST']}")

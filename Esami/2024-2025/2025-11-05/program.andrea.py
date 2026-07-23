@@ -244,7 +244,7 @@ def func5(img, output_file_name):
     img2 = [ [ img[Y(x,y,W,H)][X(x,y,W,H)] for x in range(H) ] for y in range(W) ]
     for row in img2:
         row[:] = row[::-1]   # flip sinistra-destra della riga
-    images.save(img2,output_file_name)
+    images.save(img2, output_file_name)
     return W,H
 
 
