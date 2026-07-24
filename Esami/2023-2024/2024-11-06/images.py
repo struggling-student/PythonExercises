@@ -26,6 +26,6 @@ def save(img, filename):
         Save the 'img' image in a 'filename' PNG file. img is a list of lists of pixel.
         Each pixel is a tuple (R, G, B) of its 3 colors with values in 0..255.
     """
-    pngimg = png.from_array(img,'RGB')
+    pngimg = png.from_array(img, 'RGB')
     pngimg.save(filename)
 
